@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>최병구 — 0.01g Defines Taste</title>
+<meta name="description" content="손님이 알아채지 못할 만큼 작은 차이, 0.01g까지 책임지는 셰프 최병구의 포트폴리오">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23fff'/%3E%3Ccircle cx='32' cy='40' r='7' fill='%23F2C230'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..500&family=Fredericka+the+Great&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;500;600;700&display=swap">
+<script>(function(){try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro');}catch(e){}})();</script>
+<style>
+@font-face{font-family:'AbhayaM';src:url('fonts/AbhayaLibre-Medium.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'AbhayaXB';src:url('fonts/AbhayaLibre-ExtraBold.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'SunBatang';src:url('fonts/SunBatang-Medium.woff2') format('woff2');font-weight:300 500;font-style:normal;font-display:swap}
+@font-face{font-family:'SunBatang';src:url('fonts/SunBatang-Bold.woff2') format('woff2');font-weight:600 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('fonts/Pretendard-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('fonts/Pretendard-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Pretendard';src:url('fonts/Pretendard-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+:root{
+  --bg:#FFFFFF; --ink:#141414; --ink2:#5E5E5E; --ink3:#8C8C8C; --line:#E7E7E7; --soft:#F6F6F4;
+  --accent:#F2C230;
+  --serif:'Fraunces','Noto Serif KR',Georgia,serif;
+  --serif-kr:'Pretendard','Noto Sans KR',system-ui,sans-serif;
+  --title:'AbhayaXB','SunBatang','Noto Serif KR',Georgia,serif;
+  --sans:'Pretendard','Noto Sans KR',system-ui,sans-serif;
+  --kr:'Pretendard','Noto Sans KR',system-ui,sans-serif;
+  --mono:'IBM Plex Mono','Pretendard',ui-monospace,monospace;
+  --instr:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--kr);line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:12px 16px;z-index:100}
+.skip:focus{left:16px}
+.mono{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2)}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+section{padding:clamp(5rem,10vw,9rem) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px;align-items:baseline;border-top:1px solid var(--ink);padding-top:18px}
+.sec-head h2{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.02;letter-spacing:-.01em}
+.sec-head h2 .kr{display:block;margin-top:14px;font-family:var(--serif-kr);font-size:.38em;letter-spacing:0;color:var(--ink2)}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr}}
+
+/* top bar */
+.bar{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+.bar.solid{border-bottom-color:var(--line)}
+.bar .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;height:60px}
+.bar .who{font-family:var(--sans);font-weight:600;font-size:.92rem;text-decoration:none;letter-spacing:-.005em}
+.bar .who i{font-style:normal;color:var(--ink3);font-weight:500;margin-left:8px}
+.bar .mid{justify-self:center}
+.bar ul{justify-self:end;list-style:none;margin:0;padding:0;display:flex;gap:22px}
+.bar ul a{display:inline-block;padding:12px 0;font-family:var(--sans);font-weight:500;font-size:.86rem;text-decoration:none;color:var(--ink2);background:linear-gradient(var(--accent),var(--accent)) 0 85%/0 2px no-repeat;transition:background-size .3s,color .2s}
+.bar ul a:hover,.bar ul a:focus-visible{color:var(--ink);background-size:100% 2px}
+
+/* hero */
+.hero{position:relative;padding:84px 0 32px;display:flex;flex-direction:column}
+.hero .wrap{width:100%;flex:1;display:flex;flex-direction:column}
+.masthead{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:12px 0}
+.masthead p{margin:0}
+.masthead p:last-child{text-align:right}
+.stage{position:relative;display:grid;grid-template-columns:minmax(0,9fr) minmax(0,3fr);gap:24px;align-items:end;padding:clamp(24px,3.5vw,56px) 0 clamp(110px,10vw,160px)}
+.name{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(4.2rem,14vw,13rem);line-height:.98;letter-spacing:-.025em;color:var(--ink)}
+.name .ln{display:block;overflow:hidden;padding-bottom:.32em;margin-bottom:-.26em}
+.name .l3{overflow:visible;clip-path:inset(-8em -1em 0 -1em)}
+.name .ln > span{display:inline-block}
+.name .ch{display:inline-block;transform:none}
+.name .dotw{display:inline-block;position:relative;width:.26em;height:.1em}
+.name .dot{position:absolute;left:50%;bottom:2px;width:.15em;height:.15em;margin-left:-.075em;border-radius:50%;background:var(--accent)}
+.side{align-self:end;display:flex;flex-direction:column;gap:18px;padding-bottom:.6em}
+.side .lead{margin:0;font-family:var(--serif-kr);font-size:clamp(1rem,1.35vw,1.2rem);line-height:1.75;color:var(--ink)}
+.side .mono{line-height:1.7}
+.hero-foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;border-top:1px solid var(--line);padding-top:12px}
+.hero-foot p{margin:0}
+.hero-foot .c{text-align:center}
+.hero-foot .r{text-align:right}
+.hero-foot a{text-decoration:none}
+
+/* measurement annotation */
+.meas{position:absolute;left:0;top:0;pointer-events:none;opacity:0}
+.meas .cap{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);margin-bottom:8px;white-space:nowrap;font-family:var(--mono);font-size:.72rem;color:var(--ink);letter-spacing:.02em}
+.meas .cap b{font-weight:500}
+.foot-note{margin:0;padding-top:12px;border-top:1px solid var(--line);font-family:var(--serif-kr);font-size:.86rem;line-height:1.6;color:var(--ink2)}
+.meas .cap sup{font-size:.8em;margin-left:1px}
+.foot-note sup{font-family:var(--mono);color:var(--ink);margin-right:4px}
+
+/* intro choreography */
+.intro .name .ln > span{transform:translateY(105%)}
+.intro .side,.intro .hero-foot,.intro .masthead{opacity:0}
+.play .name .ln > span{transform:none;transition:transform 1.1s cubic-bezier(.2,.8,.1,1);transition-delay:calc(var(--i) * 120ms)}
+.play .side,.play .hero-foot,.play .masthead{opacity:1;transition:opacity .8s ease .9s}
+.play .masthead{transition-delay:.2s}
+
+/* statement */
+.statement{padding-top:clamp(4rem,8vw,7rem)}
+.st-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px}
+.big{margin:0;font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.7rem,3.6vw,3.1rem);line-height:1.45;letter-spacing:-.02em}
+.big .w{color:#CFCFCF;transition:color .35s ease}
+.big .w.on{color:var(--ink)}
+.kern{margin:clamp(3rem,7vw,6rem) 0 0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(2.1rem,7.4vw,7rem);line-height:1;white-space:nowrap;overflow:hidden}
+.kern-meta{display:flex;justify-content:space-between;gap:16px;margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+@media (max-width:760px){.st-grid{grid-template-columns:1fr}}
+
+/* stats */
+.stats{padding:0 0 clamp(5rem,9vw,8rem)}
+.stats .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink)}
+.stat{padding:18px 20px 0 0;border-right:1px solid var(--line)}
+.stat + .stat{padding-left:20px}
+.stat:last-child{border-right:0}
+.stat .n{margin:0 0 6px;font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,7vw,6.4rem);line-height:1;letter-spacing:-.03em}
+.stat .n small{font-family:var(--serif-kr);font-size:.3em;letter-spacing:0;margin-left:6px;color:var(--ink2)}
+.stat p{margin:0;color:var(--ink2);font-size:.95rem}
+@media (max-width:760px){.stats .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stat:nth-child(2){border-right:0}.stat:nth-child(3){padding-left:0}.stat:nth-child(n+3){margin-top:28px}}
+
+/* philosophy */
+.essays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px);margin-top:clamp(2.5rem,5vw,4rem)}
+.essay{border-top:1px solid var(--line);padding-top:18px}
+.essay .no{margin:0 0 28px}
+.essay h3{margin:0 0 14px;font-family:var(--serif-kr);font-weight:500;font-size:1.45rem;line-height:1.4;letter-spacing:-.01em}
+.essay p{margin:0;color:var(--ink2)}
+@media (max-width:900px){.essays{grid-template-columns:1fr}}
+
+/* signature — editorial spread */
+.spread{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(14px,2vw,28px);row-gap:clamp(48px,7vw,96px);margin-top:clamp(2.5rem,5vw,4rem)}
+.fig{margin:0}
+.fig .ph{overflow:hidden;background:var(--soft)}
+.fig img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.fig:hover img{transform:scale(1.03)}
+.fig figcaption{display:grid;grid-template-columns:auto 1fr;gap:2px 16px;margin-top:14px;align-items:baseline}
+.fig figcaption .mono{grid-row:span 2}
+.fig h3{margin:0;font-family:var(--serif-kr);font-weight:500;font-size:1.15rem}
+.fig figcaption p{margin:0;font-size:.9rem;color:var(--ink2)}
+.f1{grid-column:1 / span 7}.f1 .ph{aspect-ratio:4/3}
+.f2{grid-column:9 / span 4;align-self:end}.f2 .ph{aspect-ratio:3/4}
+.f3{grid-column:1 / span 4}.f3 .ph{aspect-ratio:1/1}
+.f4{grid-column:5 / span 4;margin-top:18%}.f4 .ph{aspect-ratio:3/4}
+.f5{grid-column:9 / span 4}.f5 .ph{aspect-ratio:1/1}
+.f6{grid-column:2 / span 6}.f6 .ph{aspect-ratio:3/2}
+.f7{grid-column:9 / span 4;align-self:center}.f7 .ph{aspect-ratio:4/5}
+.f8{grid-column:1 / span 4}.f8 .ph{aspect-ratio:4/5}
+.f9{grid-column:6 / span 7;align-self:end}.f9 .ph{aspect-ratio:16/10}
+@media (max-width:860px){.spread{grid-template-columns:1fr;row-gap:48px}.spread .fig{grid-column:1 / -1;margin-top:0}}
+@media (prefers-reduced-motion:reduce){.fig img{transition:none}.fig:hover img{transform:none}}
+
+/* notes */
+.notes{background:var(--soft)}
+.notes-ctrl{display:flex;justify-content:flex-end;gap:8px;margin-top:20px}
+.nbtn{width:46px;height:46px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-family:var(--sans);font-size:1rem;cursor:pointer;transition:background .2s,color .2s}
+.nbtn:hover,.nbtn:focus-visible{background:var(--ink);color:#fff;outline:none}
+.strip{--pad:max(clamp(20px,4vw,56px),calc((100vw - 1320px)/2 + clamp(20px,4vw,56px)));display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);padding:2rem var(--pad) 1rem;scrollbar-width:thin}
+.strip:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.note{flex:0 0 clamp(230px,24vw,320px);min-width:0;margin:0;scroll-snap-align:start}
+.note img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.note figcaption{display:flex;justify-content:space-between;margin-top:10px}
+.note figcaption a{text-decoration:none;color:var(--ink)}
+.note figcaption a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px}
+
+/* career index */
+.index{margin-top:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(0,4fr) minmax(0,5fr);gap:6px 24px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.row .k{font-family:var(--mono);font-size:.82rem;color:var(--ink2)}
+.row .v{font-weight:500}
+.row .d{color:var(--ink2);font-size:.95rem}
+@media (max-width:760px){.row{grid-template-columns:1fr}}
+.two{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,72px);margin-top:clamp(3.5rem,7vw,6rem)}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+.skill{padding:16px 16px 18px 0;border-bottom:1px solid var(--line)}
+.skill h3{margin:0 0 4px;font-family:var(--serif-kr);font-weight:500;font-size:1.05rem}
+.skill p{margin:0;font-size:.9rem;color:var(--ink2)}
+.edu h3{margin:18px 0 8px}
+.edu ul{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.edu li{padding:9px 0;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--ink2)}
+@media (max-width:860px){.two{grid-template-columns:1fr}.skills{grid-template-columns:1fr}}
+
+/* contact */
+.contact{padding:clamp(5rem,10vw,9rem) 0 32px;border-top:1px solid var(--ink)}
+.contact .big-c{margin:0;font-family:var(--serif-kr);font-weight:500;font-size:clamp(2rem,5.4vw,4.6rem);line-height:1.25;letter-spacing:-.025em}
+.contact .big-c em{font-family:var(--serif);font-style:italic;font-weight:400}
+.clist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--line);padding-top:18px}
+.clist a{display:inline-block;margin-top:6px;font-family:var(--sans);font-weight:500;font-size:clamp(1rem,1.6vw,1.3rem);text-decoration:none;background:linear-gradient(var(--accent),var(--accent)) 0 92%/0 3px no-repeat;transition:background-size .3s}
+.clist a:hover,.clist a:focus-visible{background-size:100% 3px}
+.colophon{display:flex;justify-content:space-between;gap:16px;margin-top:clamp(4rem,8vw,7rem);border-top:1px solid var(--line);padding-top:12px}
+@media (max-width:760px){.clist{grid-template-columns:1fr}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.js .rv.in{opacity:1;transform:none}
+
+/* 0.01g cursor */
+.cur{position:fixed;left:0;top:0;z-index:200;pointer-events:none;display:none}
+.cur i{position:absolute;left:-4px;top:-4px;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.cur b{position:absolute;left:-30px;top:-30px;width:60px;height:60px;border:1px solid var(--ink);border-radius:50%;transform:scale(.2);opacity:0;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .25s}
+.cur span{position:absolute;left:12px;top:12px;font-family:var(--mono);font-size:.68rem;color:var(--ink);opacity:0;transition:opacity .2s;white-space:nowrap;background:#fff;padding:1px 4px}
+.cur.big b{transform:scale(1);opacity:1}
+.cur.big span{opacity:1;left:36px;top:24px}
+.has-cur .cur{display:block}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+@media (max-width:760px){
+  .bar ul{gap:12px}.bar ul a{font-size:.74rem}
+  .bar .who i,.bar .mid{display:none}
+  .bar .wrap{grid-template-columns:auto 1fr}
+  .masthead{grid-template-columns:1fr 1fr}.masthead p:nth-child(n+3){display:none}
+  .stage{grid-template-columns:1fr}
+  .hero-foot{grid-template-columns:1fr 1fr}.hero-foot .c{display:none}
+  .name{font-size:21vw}
+}
+
+/* ===== Essay reader (#essay) ===== */
+body.reading .hero, body.reading main, body.reading #contact{display:none}
+.reader{padding:84px 0 0}
+.progress{position:fixed;left:0;right:0;top:60px;height:2px;z-index:49;background:transparent}
+.progress span{display:block;height:100%;width:0;background:var(--ink);position:relative}
+.progress span::after{content:"";position:absolute;right:-4px;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.r-head .masthead{margin-top:12px}
+.r-head .masthead a{text-decoration:none}
+.r-head .masthead a:hover{text-decoration:underline}
+.r-kicker{margin:clamp(3rem,8vw,6rem) 0 18px}
+.r-title{margin:0;font-family:var(--serif-kr);font-weight:500;font-size:clamp(2.8rem,8vw,7rem);line-height:1.08;letter-spacing:-.035em}
+.r-dek{margin:28px 0 0;max-width:38rem;font-family:var(--serif-kr);font-size:clamp(1.1rem,1.7vw,1.4rem);line-height:1.7;color:var(--ink2)}
+.r-by{margin:28px 0 0;padding-top:12px;border-top:1px solid var(--line);max-width:38rem}
+.r-lead{margin:clamp(3rem,6vw,5rem) auto 0}
+.r-lead img{--lead-h:calc((min(100vw, 1320px) - 2 * clamp(20px,4vw,56px)) * 9 / 21);height:var(--lead-h);width:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 30%;filter:grayscale(1)}
+.r-lead figcaption{margin-top:10px}
+.r-body{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr) minmax(0,2fr);gap:clamp(24px,4vw,56px);padding-top:clamp(3rem,7vw,6rem);padding-bottom:clamp(4rem,8vw,7rem)}
+.r-side{position:sticky;top:96px;align-self:start;display:flex;flex-direction:column;gap:36px}
+.toc ol{margin:12px 0 0;padding:0;list-style:none;counter-reset:t;border-top:1px solid var(--line)}
+.toc li{counter-increment:t;border-bottom:1px solid var(--line)}
+.toc a{display:flex;gap:12px;padding:10px 0;text-decoration:none;font-family:var(--serif-kr);font-size:.98rem;color:var(--ink2);transition:color .2s}
+.toc a::before{content:counter(t,upper-roman) ".";font-family:var(--mono);font-size:.74rem;min-width:2.2em;padding-top:3px;color:var(--ink3)}
+.toc a:hover,.toc a.on{color:var(--ink)}
+.toc a.on::before{color:var(--ink)}
+.glance{margin:0}
+.glance > div{display:grid;grid-template-columns:minmax(0,1fr);padding:10px 0;border-bottom:1px solid var(--line)}
+.glance dt{margin:0 0 2px}
+.glance dd{margin:0;font-size:.95rem}
+.glance > p{margin:0 0 6px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.r-text{max-width:36rem}
+.chap{padding:0 0 clamp(3rem,6vw,4.5rem);scroll-margin-top:90px}
+.chap-no{margin:0 0 10px}
+.chap h2{margin:0 0 26px;font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.35;letter-spacing:-.02em}
+.chap p{font-family:var(--serif-kr);font-size:clamp(1.04rem,1.2vw,1.14rem);line-height:2;margin:0 0 1.3em;color:#222}
+.dropcap::first-letter{float:left;font-family:var(--serif-kr);font-weight:500;font-size:4.2em;line-height:.9;margin:.06em .12em 0 0;color:var(--ink)}
+.pull{margin:2.4em 0;padding:1.4em 0 0;border-top:1px solid var(--ink);position:relative}
+.pull::before{content:"";position:absolute;left:0;top:-5px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.pull p{font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.35rem,2.2vw,1.8rem);line-height:1.55;letter-spacing:-.02em;color:var(--ink);margin:0}
+.r-fig{margin:2.4em 0}
+.r-fig img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.r-fig figcaption{margin-top:10px}
+.coda{border-top:1px solid var(--ink);padding-top:18px}
+.coda-text{font-size:clamp(1.25rem,1.9vw,1.55rem)!important;line-height:1.75!important;color:var(--ink)!important}
+.sign{margin:1.6em 0 0}
+.r-note{margin-top:2.4em!important;font-family:var(--kr)!important;font-size:.85rem!important;color:var(--ink3)!important;line-height:1.6!important}
+.r-end{display:flex;flex-wrap:wrap;gap:10px;margin-top:2rem}
+.r-btn{display:inline-block;padding:14px 22px;border:1px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;font-family:var(--sans);font-weight:500;font-size:.92rem}
+.r-btn.ghost{background:transparent;color:var(--ink)}
+.r-btn:hover{background:#fff;color:var(--ink)}
+.r-btn.ghost:hover{background:var(--ink);color:#fff}
+.essay-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-family:var(--sans);font-weight:500;font-size:.95rem;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.essay-link i{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+@media (max-width:1000px){.r-body{grid-template-columns:1fr}.r-side{position:static}.r-text{max-width:none}.r-lead img{--lead-h:calc((100vw - 2 * clamp(20px,4vw,56px)) * 3 / 4)}}
+
+/* weight: the name sits on a scale; 0.01g lands and the scale registers it */
+.name{will-change:transform}
+.name .plat{display:block;height:1px;background:var(--ink);margin-top:-.446em;transform-origin:center}
+.meas .tick{position:absolute;left:0;top:0;width:1px;height:10px;background:var(--ink)}
+.meas .cap{left:-1px!important;top:16px!important;bottom:auto!important;transform:none!important;margin:0!important}
+.meas .cap em{font-style:normal;margin-left:8px;padding:1px 5px;border:1px solid var(--line);color:var(--ink3);font-size:.86em;letter-spacing:.06em}
+.meas .cap em.ok{color:var(--ink);border-color:var(--ink)}
+.meas .cap sup{margin-left:4px}
+
+/* balance: Byung·G0.01g sit on a beam that is off-level until the 0.01g forms */
+.name .beam{display:block;transform-origin:50% 100%}
+.intro .name .beam{transform:rotate(1.5deg)}
+.name .beam.level{animation:level 1.6s cubic-bezier(.45,0,.25,1) both}
+@keyframes level{0%{transform:rotate(1.5deg)}70%{transform:rotate(-.16deg)}86%{transform:rotate(.04deg)}100%{transform:rotate(0deg)}}
+.name .fulc{display:block;position:relative;height:12px}
+.name .fulc::before{content:"";position:absolute;left:50%;top:0;margin-left:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:9px solid var(--ink)}
+
+/* bold name */
+.name{font-family:'Fraunces','Noto Serif KR',Georgia,serif;font-weight:700;letter-spacing:-.035em}
+.name .seg{display:inline-block;position:relative}
+/* a light 0.01g dot falls straight down, softly, like snow */
+.intro .name .dot{transform:translate(0,-1.25em);opacity:0}
+.play .name .dot{animation:drift 1.7s cubic-bezier(.35,.15,.6,.96) .7s both}
+@keyframes drift{0%{transform:translate(0,-1.25em);opacity:0}15%{opacity:1}100%{transform:translate(0,0);opacity:1}}
+.meas .cap{font-size:.86rem!important}
+.meas .cap b{font-variant-numeric:tabular-nums;font-weight:500;display:inline-block;min-width:3.6em;text-align:right}
+
+/* Fraunces at its text optical size everywhere (the cut picked in the comparison sheet) */
+html{font-optical-sizing:none;font-variation-settings:'opsz' 14}
+
+/* all Latin in Fraunces; only the scale readout keeps an instrument mono */
+.meas .cap,.meas .cap em{font-family:var(--instr)!important}
+
+/* tagline: only 0.01g carries the accent; room for the y and g tails */
+.kern{padding-bottom:.18em}
+.kern .acc{color:var(--accent)}
+
+/* text selection: a yellow block */
+::selection{background:var(--accent);color:var(--ink)}
+::-moz-selection{background:var(--accent);color:var(--ink)}
+
+/* ===== Grammo archive: home teaser + reader (#grammo) ===== */
+.arch{padding-top:0}
+main section[id]{scroll-margin-top:72px}
+.arch-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,6vw,96px);margin-top:clamp(2.5rem,5vw,4rem);padding-top:24px;border-top:1px solid var(--ink)}
+.arch-lead{margin:0;font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.35rem,2.3vw,1.95rem);line-height:1.6;letter-spacing:-.02em}
+.arch-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:-14px 0 0}
+.arch-facts > div{padding:14px 0 16px;border-bottom:1px solid var(--line)}
+.arch-facts > div:nth-child(odd){padding-right:16px;border-right:1px solid var(--line)}
+.arch-facts > div:nth-child(even){padding-left:16px}
+.arch-facts dt{margin:0 0 6px}
+.arch-facts dd{margin:0;font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.4rem);line-height:1;letter-spacing:-.03em}
+.arch-facts dd small{font-family:var(--serif-kr);font-size:.32em;letter-spacing:0;margin-left:6px;color:var(--ink2)}
+@media (max-width:860px){.arch-grid{grid-template-columns:1fr}}
+.row .d a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent)}
+
+.g-figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--ink)}
+.g-fig{padding:16px 20px 0 0;border-right:1px solid var(--line)}
+.g-fig + .g-fig{padding-left:20px}
+.g-fig:last-child{border-right:0}
+.g-fig .n{margin:0 0 8px;font-family:var(--serif);font-size:clamp(3rem,7vw,6rem);line-height:1;letter-spacing:-.03em}
+.g-fig .n small{font-family:var(--serif-kr);font-size:.28em;letter-spacing:0;margin-left:6px;color:var(--ink2)}
+.g-fig .mono{margin:0}
+@media (max-width:760px){.g-figs{grid-template-columns:repeat(2,minmax(0,1fr))}.g-fig:nth-child(2){border-right:0}.g-fig:nth-child(3){padding-left:0}.g-fig:nth-child(n+3){margin-top:24px}}
+
+.pull cite{display:block;margin-top:12px;font-style:normal}
+.tindex{margin:2.2em 0 2.4em;border-top:1px solid var(--ink)}
+.tindex .t{display:grid;grid-template-columns:7.2rem minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.tindex .n{font-family:var(--serif);font-size:2.1rem;line-height:1;letter-spacing:-.02em}
+.tindex .n small{font-family:var(--serif-kr);font-size:.42em;margin-left:4px;color:var(--ink2);letter-spacing:0}
+.tindex .v{font-family:var(--serif-kr);font-size:1.02rem}
+.tindex .d{color:var(--ink3)}
+.kv{margin:2em 0 2.4em;border-top:1px solid var(--line)}
+.kv > div{display:grid;grid-template-columns:5.2rem minmax(0,1fr);gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-family:var(--serif-kr);font-size:.98rem;line-height:1.7}
+.kv .mono{padding-top:4px}
+.tl{margin:2em 0 2.4em;border-top:1px solid var(--ink)}
+.tl .r{display:grid;grid-template-columns:7.2rem minmax(0,1fr);gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.tl .k{grid-row:span 2;padding-top:4px;color:var(--ink2)}
+.tl .v{font-family:var(--serif-kr);font-weight:500;font-size:1.02rem}
+.tl .d{font-family:var(--serif-kr);font-size:.92rem;color:var(--ink2)}
+.press{margin:2em 0 0;border-top:1px solid var(--ink)}
+.press .y{display:grid;grid-template-columns:4.4rem minmax(0,1fr);gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-family:var(--serif-kr);font-size:1rem;line-height:1.85}
+.press .k{padding-top:5px}
+.voices{list-style:none;margin:2em 0 0;padding:0;border-top:1px solid var(--ink)}
+.voices li{padding:16px 0 16px 22px;border-bottom:1px solid var(--line);font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.12rem,1.6vw,1.3rem);line-height:1.6;position:relative}
+.voices li::before{content:"";position:absolute;left:0;top:1.45em;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+@media (max-width:560px){.tindex .t{grid-template-columns:5.6rem minmax(0,1fr)}.tindex .d{grid-column:2}.tl .r{grid-template-columns:1fr}.tl .k{grid-row:auto}}
+
+/* career: scope + result lines */
+.row.hdr{padding:10px 0;color:var(--ink3);font-size:.72rem;letter-spacing:.08em}
+.row.hdr span{font-weight:400}
+.row .d .sc{display:block}
+.row .d .rs{display:block;margin-top:6px;padding-left:15px;position:relative;color:var(--ink)}
+.row .d .rs::before,.lg{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.lg{position:relative;display:inline-block;top:-1px;margin:0 4px 0 8px}
+@media (max-width:760px){.row.hdr{display:none}}
+/* contact: by purpose */
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--ink)}
+.path{padding:18px 24px 26px 0;border-right:1px solid var(--line);display:flex;flex-direction:column}
+.path + .path{padding-left:24px}
+.path:last-child{border-right:0}
+.path .pn{margin:0 0 14px}
+.path h3{margin:0 0 22px;font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.2rem,1.8vw,1.5rem);letter-spacing:-.01em}
+.path .pd{margin:0 0 16px;color:var(--ink2);line-height:1.7}
+.path .pneed{margin:0 0 auto;padding-top:12px;border-top:1px solid var(--line);font-size:.92rem;line-height:1.6}
+.path .pneed .mono{display:block;margin-bottom:4px}
+.path .essay-link{align-self:flex-start;border-bottom:0;padding-bottom:0}
+.path .essay-link:hover{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
+.path .gmail-link{margin-top:12px;font-size:.84rem;color:var(--ink2)}
+.clist .gmail-mini{display:block;margin-top:8px;font-size:.84rem;font-weight:400;color:var(--ink2)}
+@media (max-width:860px){.paths{grid-template-columns:1fr}.path,.path + .path{padding:18px 0 26px;border-right:0;border-bottom:1px solid var(--line)}}
+
+.row .v .tag{display:inline-block;margin-left:8px;padding:1px 6px 0;border:1px solid var(--line);font-size:.64rem;letter-spacing:.06em;color:var(--ink2);vertical-align:2px;font-weight:400}
+
+/* ===== tone: Korean carries the message, English labels the section ===== */
+.sec-head h2{font-family:var(--serif-kr);font-weight:500;font-size:clamp(2rem,4.2vw,3.7rem);line-height:1.2;letter-spacing:-.03em}
+.sec-head h2 .en{display:block;margin:0 0 .45em;font-family:var(--serif);font-style:italic;font-weight:400;font-size:.42em;letter-spacing:0;color:var(--ink2)}
+.sec-head h2 .kr{margin-top:16px;font-size:.4em;font-weight:400;line-height:1.6;letter-spacing:-.01em}
+.kern{font-family:var(--serif-kr)!important;font-style:normal!important;font-weight:500!important;font-size:clamp(1.9rem,6.2vw,5.8rem)!important;letter-spacing:-.03em}
+.kern .acc{font-family:var(--serif);font-style:italic;font-weight:400}
+/* ===== captions: field notes ===== */
+.fig .memo{grid-column:1/-1;margin:10px 0 0;padding-top:10px;border-top:1px solid var(--line);font-family:var(--serif-kr);font-size:.9rem;line-height:1.7;color:var(--ink2);max-width:34em}
+.fig .memo .mono,.note .memo .mono{display:block;margin-bottom:2px;font-size:.66rem;color:var(--ink3)}
+.note figcaption{display:block!important}
+.note .cap-top{display:flex;justify-content:space-between}
+.note .memo{display:block;margin-top:8px;font-family:var(--serif-kr);font-size:.88rem;line-height:1.65;color:var(--ink2)}
+/* ===== reader navigation ===== */
+.bar .rnav,.bar .mid-read{display:none}
+body.reading .bar .mnav,body.reading .bar .mid-home{display:none}
+body.reading .bar .rnav{display:flex}
+body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.02em}
+.bar .rnav a[aria-current="page"]{color:var(--ink);background-size:100% 2px}
+.next-read{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 20px;margin-top:2.6rem;padding:22px 0 24px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);text-decoration:none;color:var(--ink)}
+.next-read .mono{grid-column:1/-1}
+.next-read .nt{font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:-.02em;line-height:1.3}
+.next-read .nd{grid-column:1;font-family:var(--serif-kr);font-size:.95rem;color:var(--ink2);line-height:1.6}
+.next-read .arr{grid-column:2;grid-row:2/4;align-self:center;font-family:var(--serif);font-size:2rem;transition:transform .3s}
+.next-read:hover .arr{transform:translateX(6px)}
+.next-read:hover .nt{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
+.back-row{display:flex;flex-wrap:wrap;gap:8px 24px;margin:18px 0 0;text-transform:none;letter-spacing:.01em}
+.back-row a{text-decoration:none;color:var(--ink2)}
+.back-row a:hover{color:var(--ink)}
+
+/* ===== review pass 2 ===== */
+/* UI layer: nav, labels, years in IBM Plex Mono; headlines and text stay serif */
+.bar .who{font-family:var(--serif-kr)}
+.bar .who i{font-family:var(--mono);font-size:.78rem;letter-spacing:.02em}
+.bar ul a{font-family:var(--mono)!important;font-weight:400!important;font-size:.78rem!important;letter-spacing:.02em}
+.nbtn{font-family:var(--mono)}
+.row .k{font-size:.78rem}
+/* cursor: hide the system arrow where the 0.01g dot takes over */
+@media (hover:hover) and (pointer:fine){ .has-cur, .has-cur *{cursor:none!important} }
+.cur.lnk i{transform:scale(2.2);transition:transform .2s}
+.cur i{transition:transform .2s}
+.fig .ph,.note img{cursor:zoom-in}
+/* lightbox */
+.has-cur .lb,.has-cur .lb *{cursor:default!important}
+.has-cur .lb-x{cursor:pointer!important}
+.lb{border:0;padding:0;margin:auto;max-width:min(92vw,1100px);max-height:92vh;background:#fff;overflow:visible}
+.lb::backdrop{background:rgba(255,255,255,.94)}
+.lb figure{margin:0;display:grid;grid-template-columns:minmax(0,auto) minmax(220px,300px);gap:28px;align-items:end}
+.lb img{display:block;max-width:100%;max-height:84vh;width:auto;height:auto;object-fit:contain}
+.lb figcaption{display:flex;flex-direction:column;gap:8px;padding-bottom:4px;font-family:var(--serif-kr);line-height:1.7}
+.lb figcaption strong{font-weight:500;font-size:1.25rem}
+.lb figcaption span:last-child{color:var(--ink2);font-size:.95rem}
+.lb-x{position:absolute;right:0;top:-38px;border:0;background:none;padding:6px 0;color:var(--ink);cursor:pointer}
+@media (max-width:760px){.lb figure{grid-template-columns:1fr;gap:14px}.lb img{max-height:62vh}}
+/* kern: yellow block behind the key number, live tracking readout */
+.kern{font-size:clamp(1.9rem,5.6vw,5.2rem)!important}
+.kern .acc{color:var(--ink)!important;background:linear-gradient(transparent 58%,var(--accent) 58%,var(--accent) 92%,transparent 92%);padding:0 .04em}
+.kern-meta b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+/* reader transitions */
+@keyframes rfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.enter{animation:rfade .45s ease both}
+@media (prefers-reduced-motion:reduce){.enter{animation:none}}
+/* essay lead: portrait + quote */
+.rl-grid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:end}
+.rl-grid figcaption{margin-top:10px}
+.rl-aside{border-top:1px solid var(--ink);padding-top:16px;max-width:30rem}
+.rl-aside blockquote{margin:14px 0 28px;font-family:var(--serif-kr);font-weight:500;font-size:clamp(1.35rem,2.2vw,1.85rem);line-height:1.55;letter-spacing:-.02em}
+.rl-meta{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+.rl-meta > div{padding:10px 0;border-bottom:1px solid var(--line)}
+.rl-meta dd{margin:2px 0 0;font-family:var(--serif-kr)}
+@media (max-width:1000px){.rl-grid{grid-template-columns:1fr}.rl-grid img{width:100%;height:auto}}
+/* mobile menu */
+.mbtn{display:none;border:1px solid var(--ink);background:#fff;padding:7px 12px;color:var(--ink);cursor:pointer}
+@media (max-width:760px){
+  .bar nav{justify-self:end}
+  .mbtn{display:inline-block}
+  body.reading .mbtn{display:none}
+  .bar .mnav{display:none;position:fixed;left:0;right:0;top:60px;width:auto;margin:0;justify-self:stretch;flex-direction:column;gap:0;padding:8px clamp(20px,4vw,56px) 16px;background:#fff;border-bottom:1px solid var(--line)}
+  .bar.open .mnav{display:flex}
+  body.reading .bar.open .mnav{display:none}
+  .bar .mnav a{display:block;padding:12px 0;font-size:.9rem!important;border-bottom:1px solid var(--line)}
+  .bar .rnav{gap:14px}
+}
+/* notes strip: end states + drag */
+.nbtn:disabled{opacity:.25;cursor:default}
+.strip.drag{scroll-snap-type:none;cursor:grabbing}
+.strip.drag img{pointer-events:none}
+
+/* ===== type roles: titles in serif, everything else in Pretendard ===== */
+.kern,.r-title,.pull p,.dropcap::first-letter,.contact .big-c,
+.rl-aside blockquote{font-family:var(--title)!important}
+.stat .n small,.g-fig .n small,.arch-facts dd small,.tindex .n small{font-family:var(--serif-kr)!important;letter-spacing:-.01em}
+/* headings smaller than the section titles read in Pretendard */
+.chap h2,.fig h3,.essay h3,.skill h3,.path h3,.next-read .nt,.lb figcaption strong,.bar .who,.tl .v{font-family:var(--serif-kr)!important;letter-spacing:-.02em}
+.sec-head h2 .kr{font-family:var(--serif-kr)!important;letter-spacing:-.01em;font-size:min(.4em,1.05rem)!important}
+.sec-head h2 .en{font-family:var(--serif)!important}
+.kern .acc{font-family:var(--serif)!important}
+/* Pretendard reads tighter than the serif at body sizes */
+.chap p,.r-dek,.side .lead,.arch-lead,.coda-text{letter-spacing:-.01em}
+.name .plat{position:relative;z-index:2}
+
+/* the name in Fredericka the Great — a hand-engraved, pen-hatched display face */
+.name{font-family:'Fredericka the Great','Fraunces',Georgia,serif!important;font-weight:400!important;letter-spacing:-.01em!important}
+.side .foot-note{border-top:0}
+/* statement: smaller, cleaner — Pretendard, tight tracking */
+.big{font-family:var(--serif-kr)!important;font-weight:500;font-size:clamp(1.3rem,2.15vw,1.9rem)!important;line-height:1.62!important;letter-spacing:-.03em!important;max-width:34em}
+.side .lead .l,.side .foot-note .l{display:block}
+/* section heads: stacked, Korean title in Pretendard Bold */
+.sec-head{grid-template-columns:1fr!important;gap:0!important;padding-top:20px}
+.sec-head > .mono{margin:0 0 clamp(1.8rem,3.4vw,2.6rem)}
+.sec-head h2{font-family:var(--serif-kr)!important;font-weight:700!important;font-size:clamp(2.1rem,4vw,3.6rem)!important;line-height:1.15!important;letter-spacing:-.04em!important}
+.sec-head h2 .en{margin:0 0 .3em!important;font-weight:400;letter-spacing:0!important}
+.sec-head h2 .kr{margin-top:clamp(1.2rem,2.4vw,1.9rem)!important;font-weight:400!important;letter-spacing:-.01em!important}
+.essays{margin-top:clamp(3rem,6vw,4.5rem)}
+.essay h3{font-size:clamp(1.25rem,1.7vw,1.5rem)!important;font-weight:500}
+.essay p{font-size:1.02rem;line-height:1.75}
+/* Latin and numerals beside SunBatang: Abhaya Libre ExtraBold */
+.kern .acc,.contact .big-c em{font-family:'AbhayaXB',var(--title)!important;font-style:normal!important;font-weight:800!important}
+.stat .n,.stat .n .cu,.arch-facts dd,.g-fig .n,.tindex .n{font-family:'AbhayaXB',var(--title)!important;font-style:normal!important;font-weight:800!important;letter-spacing:-.02em!important}
+.sec-head h2 .en{font-family:'AbhayaXB',var(--title)!important;font-style:normal!important;font-weight:800!important;letter-spacing:-.005em!important}
+/* 본문 크기보다 큰 한글: 순바탕 Medium (영문·숫자는 Abhaya Libre Medium) */
+.side .lead,.fig h3,.voices li,.r-dek,.essay h3,.path h3,.coda-text,.big,.arch-lead,.next-read .nt,.chap h2,.sec-head h2,
+.stat .n small,.g-fig .n small,.arch-facts dd small,.tindex .n small{font-family:'AbhayaM','SunBatang','Noto Serif KR',Georgia,serif!important;font-weight:500!important}
+.sec-head h2 .kr{font-family:var(--kr)!important;font-weight:400!important}
+.side .lead{font-size:clamp(.92rem,1.3vw,1.2rem)!important;line-height:1.8!important}
+/* 순바탕 자간: 글자 사이 실제 여백(사이드베어링+자간)을 기존의 절반으로 */
+.side .lead,.big,.big .w{letter-spacing:-.09em!important;word-spacing:.07em!important}
+.fig h3,.essay h3,.path h3,.next-read .nt,.chap h2{letter-spacing:-.085em!important;word-spacing:.07em!important}
+.r-dek,.coda-text,.arch-lead,.stat .n small,.g-fig .n small,.arch-facts dd small,.tindex .n small{letter-spacing:-.08em!important;word-spacing:.07em!important}
+.voices li{letter-spacing:-.075em!important;word-spacing:.07em!important}
+.sec-head h2{letter-spacing:-.095em!important;word-spacing:.06em!important}
+.r-title{letter-spacing:-.095em!important;word-spacing:.06em!important}
+.contact .big-c{letter-spacing:-.09em!important;word-spacing:.07em!important}
+.pull p{letter-spacing:-.08em!important;word-spacing:.07em!important}
+.rl-aside blockquote{letter-spacing:-.085em!important;word-spacing:.07em!important}
+.lat{letter-spacing:-.01em!important;word-spacing:0!important}
+.sec-head h2 .en,.sec-head h2 .kr{word-spacing:normal!important}
+
+/* 경력: 범위·변화는 접어 두고 화살표로 펼침 */
+.index .row:not(.hdr){position:relative;padding-right:44px}
+.index .row .d{display:none}
+.index .row.open .d{display:block;grid-column:2/-1;grid-row:2;padding:4px 0 6px}
+.index .row .tgl{position:absolute;right:0;top:10px;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink2);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.index .row .tgl svg{transition:transform .3s}
+.index .row .tgl:hover,.index .row .tgl:focus-visible{border-color:var(--ink);color:var(--ink)}
+.index .row.open .tgl{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.index .row.open .tgl svg{transform:rotate(180deg)}
+.index .row:not(.hdr){cursor:pointer}
+.row.hdr .hd3{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.row.hdr{padding-right:0}
+.tgl-all{font:inherit;letter-spacing:inherit;color:var(--ink2);background:none;border:0;padding:0;cursor:pointer;border-bottom:1px solid var(--line)}
+.tgl-all:hover{color:var(--ink);border-bottom-color:var(--accent)}
+@media (max-width:760px){
+  .index .row.open .d{grid-column:1;grid-row:auto}
+  .row.hdr{display:grid}
+  .row.hdr>span:not(.hd3){display:none}
+  .row.hdr{grid-template-columns:1fr}
+  .row.hdr .hd3>span{display:none}
+  .row.hdr .hd3{justify-content:flex-end}
+  .index .row .v{padding-right:4px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#about">본문으로 건너뛰기</a>
+<div class="cur" id="cur" aria-hidden="true"><b></b><i></i><span>0.01 g</span></div>
+<dialog class="lb" id="lb" aria-label="사진 크게 보기"><button type="button" class="lb-x mono" id="lbx">닫기 ×</button><figure><img id="lbimg" alt=""><figcaption><span class="mono" id="lbk"></span><strong id="lbt"></strong><span id="lbd"></span></figcaption></figure></dialog>
+
+<header class="bar" id="bar">
+  <div class="wrap">
+    <a class="who" href="#top">최병구<i>Chef</i></a>
+    <p class="mid mono" style="margin:0"><span class="mid-home">0.01g Defines Taste</span><span class="mid-read" id="midRead"></span></p>
+    <nav aria-label="주요 메뉴">
+      <button type="button" class="mbtn mono" id="mbtn" aria-expanded="false" aria-controls="mnav">Menu</button>
+      <ul class="mnav" id="mnav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#essay">Essay</a></li>
+        <li><a href="#grammo">Grammo</a></li>
+        <li><a href="#signature">Dishes</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="rnav">
+        <li><a href="#top">← 포트폴리오</a></li>
+        <li><a href="#essay" data-r="essay">Essay</a></li>
+        <li><a href="#grammo" data-r="grammo">Grammo</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="top" class="hero" aria-label="소개">
+  <div class="wrap">
+    <div class="masthead mono">
+      <p>Portfolio — No. 01</p>
+      <p>The Detail Issue</p>
+      <p>French × Italian</p>
+      <p>Seoul, 2026</p>
+    </div>
+    <div class="stage" id="stage">
+            <h1 class="name" id="name">
+        <span class="vh">최병구 Choi Byung Goo — G0.01g, 0.01g Defines Taste</span>
+        <span class="ln" aria-hidden="true"><span style="--i:0"><span class="seg" data-t="Choi">Choi</span></span></span>
+        <span class="beam" id="beam" aria-hidden="true">
+          <span class="ln"><span style="--i:1"><span class="seg" data-t="Byung">Byung</span></span></span>
+          <span class="ln l3"><span style="--i:2"><span class="seg" data-t="G0">G0</span><span class="dotw" id="dotw"><span class="dot" id="dot"></span></span><span class="seg" data-t="01g">01g</span></span></span>
+          <span class="plat"></span>
+        </span>
+        <span class="fulc" aria-hidden="true"></span>
+      </h1>
+      <div class="side">
+        <p class="mono">Chef<br>Choi Byung Goo<br>최병구</p>
+        <p class="lead"><span class="l">손님이 알아채지 못할 만큼 작은 차이,</span> <span class="l">그 0.01g이 맛을 정합니다.</span> <span class="l">신라호텔에서 로리스 더 프라임 립까지,</span> <span class="l">22년 동안 그 차이를 다뤄 왔습니다.</span></p>
+        <a class="essay-link" href="#essay"><i aria-hidden="true"></i>에세이 「0.01g에 관하여」 읽기</a>
+        <p class="foot-note" id="fn"><span class="l"><sup>¹</sup>이름의 마지막 글자 GOO 속 점 하나, 0.01g.</span> <span class="l">그 점 하나를 놓치지 않는 것이 제 요리입니다.</span></p>
+      </div>
+      <div class="meas" id="meas" aria-hidden="true"><span class="cap"><b id="cntV">0.00</b> g<em id="stt">TARE</em><sup>¹</sup></span><span class="tick"></span></div>
+    </div>
+    <div class="hero-foot mono">
+      <p>22 years in the kitchen</p>
+      <p class="c"><a href="#about">Scroll ↓</a></p>
+      <p class="r">@0.01g_</p>
+    </div>
+  </div>
+</section>
+
+<main>
+<section id="about" class="statement">
+  <div class="wrap">
+    <div class="st-grid">
+      <p class="mono">01 — Statement</p>
+      <p class="big" id="big">손님이 알아채지 못할 만큼 작은 차이. 소금 한 꼬집, 숙성 하루, 불 앞의 몇 초. 저는 그 0.01g을 22년 동안 놓치지 않았습니다.</p>
+    </div>
+    <div class="st-grid"><span></span><div><a class="essay-link" href="#essay"><i aria-hidden="true"></i>셰프가 직접 쓴 이야기, 에세이로 읽기</a></div>
+    </div>
+    <p class="kern" id="kern" lang="ko">모든 <span class="acc">0.01g</span>이 맛이 됩니다.</p>
+    <div class="kern-meta mono"><span>Every 0.01g counts.</span><span>Tracking <b id="trk">+0.120</b>em</span></div>
+  </div>
+</section>
+
+<div class="stats" role="region" aria-label="주요 숫자">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat rv"><p class="n"><span class="cu" data-to="22">22</span><small>년</small></p><p>주방 경력</p></div>
+      <div class="stat rv"><p class="n"><span class="cu" data-to="13">13</span><small>곳</small></p><p>거쳐 온 주방</p></div>
+      <div class="stat rv"><p class="n"><span class="cu" data-to="14">14</span><small>개</small></p><p>R&amp;D·품질 총괄 지점</p></div>
+      <div class="stat rv"><p class="n"><span class="cu" data-to="3">3</span><small>곳</small></p><p>신규 매장 오픈 총괄</p></div>
+    </div>
+  </div>
+</div>
+
+<section aria-labelledby="phil-t" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><p class="mono">02 — Philosophy</p><h2 id="phil-t"><span class="en">Three rules</span>세 가지 원칙<span class="kr">재료를 이해하고, 주방을 설계하고, 사람을 키웁니다</span></h2></div>
+    <div class="essays">
+      <article class="essay rv"><p class="no mono">I.</p><h3>재료를 이해합니다</h3><p>브라인, 염장, 훈연, 드라이에이징까지 직접 합니다. 재료를 통째로 다루면 맛과 원가가 함께 좋아집니다.</p></article>
+      <article class="essay rv"><p class="no mono">II.</p><h3>오래 가는 주방을 설계합니다</h3><p>상권, 콘셉트, 메뉴, 동선, 설비를 하나의 시스템으로 짭니다. 3년 뒤에도 같은 맛이 나는 주방이 목표입니다.</p></article>
+      <article class="essay rv"><p class="no mono">III.</p><h3>사람이 자라는 주방을 만듭니다</h3><p>직급보다 신뢰로 움직이는 팀. 공정을 단순하게 정리해 누가 서도 같은 품질이 나오게 합니다.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="signature" aria-labelledby="sig-t" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><p class="mono">03 — Signature</p><h2 id="sig-t"><span class="en">Cured, aged, handmade</span>시간이 만드는 맛<span class="kr">염장하고, 숙성하고, 손으로 반죽한 아홉 접시</span></h2></div>
+    <div class="spread">
+      <figure class="fig f1 rv"><div class="ph"><img src="img/polpo.jpg" alt="렌틸콩과 꼬마양배추 위에 올린 돌문어 뽈뽀" loading="lazy"></div><figcaption><span class="mono">Plate 01</span><h3>뽈뽀</h3><p>돌문어, 렌틸콩, 꼬마양배추, 로메스코 소스</p><p class="memo"><span class="mono">Note</span>문어는 삶는 시간이 전부입니다. 단면으로 익힘을 확인하고, 렌틸콩은 소스를 머금을 만큼만 익힙니다.</p></figcaption></figure>
+      <figure class="fig f2 rv"><div class="ph"><img src="img/ham.jpg" alt="그물에 묶여 훈연실에 매달린 훈제햄 세 덩이" loading="lazy"></div><figcaption><span class="mono">Plate 02</span><h3>훈제햄</h3><p>한돈, 메이플 리퀴드</p><p class="memo"><span class="mono">Note</span>한돈을 소금물에 재운 뒤 훈연실에 매달아 익힙니다. 브라인부터 훈연까지 모든 공정을 직접 합니다.</p></figcaption></figure>
+      <figure class="fig f3 rv"><div class="ph"><img src="img/duckpan.jpg" alt="옥수수 퓨레 위에 올린 팬프라이 오리 스테이크" loading="lazy"></div><figcaption><span class="mono">Plate 03</span><h3>팬프라이 오리 스테이크</h3><p>드라이에이징 오리가슴, 초당 옥수수 퓨레, 오리 쥬</p><p class="memo"><span class="mono">Note</span>드라이에이징으로 수분을 덜어 낸 가슴살을 껍질부터 팬에. 초당 옥수수가 나는 초여름의 접시입니다.</p></figcaption></figure>
+      <figure class="fig f4 rv"><div class="ph"><img src="img/bacon.jpg" alt="망 위에 놓인 윤기 나는 수제 베이컨 덩어리" loading="lazy"></div><figcaption><span class="mono">Plate 04</span><h3>수제 베이컨</h3><p>프로방스 허브 베이컨</p><p class="memo"><span class="mono">Note</span>삼겹을 염지해 말린 뒤 프로방스 허브로 마무리합니다. 대부분의 일은 시간이 합니다.</p></figcaption></figure>
+      <figure class="fig f5 rv"><div class="ph"><img src="img/burrata.jpg" alt="허브 오일을 두른 부라타 치즈와 토마토 피클 샐러드" loading="lazy"></div><figcaption><span class="mono">Plate 05</span><h3>부라타 치즈 샐러드</h3><p>허브 오일, 토마토 피클, 허브 오일 파우더</p><p class="memo"><span class="mono">Note</span>토마토는 피클로 산미를 세우고, 허브 오일은 파우더로 한 번 더. 같은 재료를 두 가지 질감으로 냅니다.</p></figcaption></figure>
+      <figure class="fig f6 rv"><div class="ph"><img src="img/crab.jpg" alt="통꽃게를 올린 오일 파스타와 마늘 새우 감바스" loading="lazy"></div><figcaption><span class="mono">Plate 06</span><h3>꽃게 파스타 &amp; 감바스</h3><p>오일 꽃게 소스, 마늘 오일 새우</p><p class="memo"><span class="mono">Note</span>그람모키친 시절에도 ‘꽃게 한 마리 파스타’를 냈습니다. 꽃게는 통째로, 소스는 오일로 가볍게.</p></figcaption></figure>
+      <figure class="fig f7 rv"><div class="ph"><img src="img/garganelli.jpg" alt="구운 닭 라구 소스의 가르가넬리 생면 파스타" loading="lazy"></div><figcaption><span class="mono">Plate 07</span><h3>가르가넬리</h3><p>달걀 생면, 구운 닭 라구 소스</p><p class="memo"><span class="mono">Note</span>달걀 생면을 한 장씩 말아 만드는 짧은 파스타. 닭은 먼저 구워 라구에 향을 더합니다.</p></figcaption></figure>
+      <figure class="fig f8 rv"><div class="ph"><img src="img/wholeduck.jpg" alt="제철 야채를 곁들인 드라이에이징 통오리구이" loading="lazy"></div><figcaption><span class="mono">Plate 08</span><h3>드라이에이징 오리구이</h3><p>드라이에이징 통오리, 제철 야채, 포트와인 소스</p><p class="memo"><span class="mono">Note</span>통오리를 숙성고에서 말려 껍질을 얇고 바삭하게. 포트와인 소스로 깊은 단맛을 더합니다.</p></figcaption></figure>
+      <figure class="fig f9 rv"><div class="ph"><img src="img/fettuccine.jpg" alt="한우 라구 소스를 올린 생면 페투치네" loading="lazy"></div><figcaption><span class="mono">Plate 09</span><h3>생면 페투치네</h3><p>달걀 생면, 한우 라구</p><p class="memo"><span class="mono">Note</span>“파스타는 면의 맛으로 먹는 음식입니다.” 달걀 생면에 한우 라구를 얹은 기본의 접시.</p></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="archive" class="arch" aria-labelledby="arch-t">
+  <div class="wrap">
+    <div class="sec-head"><p class="mono">04 — Archive</p><h2 id="arch-t"><span class="en">Grammo Kitchen, 2012–2016</span>그람모, 그램의 부엌<span class="kr">그람모는 이탈리아어로 ‘그램’입니다</span></h2></div>
+    <div class="arch-grid">
+      <p class="arch-lead rv">2012년 겨울, 연남동 주택가에 테이블 세 개짜리 부엌을 열었습니다. 메뉴판 없이 그날 들어온 재료로 요리하고, 빵을 굽고, 잼을 끓이고, 사람들을 가르쳤습니다. ‘0.01g’이라는 이름보다 먼저, 그램 단위의 감각을 키운 4년입니다.</p>
+      <div class="arch-side rv">
+        <dl class="arch-facts">
+          <div><dt class="mono">Tables</dt><dd>3</dd></div>
+          <div><dt class="mono">Menu</dt><dd>0</dd></div>
+          <div><dt class="mono">Years</dt><dd>4<small>년 1개월</small></dd></div>
+          <div><dt class="mono">Press</dt><dd>30<small>여 회 소개</small></dd></div>
+        </dl>
+        <a class="essay-link" href="#grammo"><i aria-hidden="true"></i>그람모키친 아카이브 읽기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="notes" class="notes" aria-labelledby="notes-t">
+  <div class="wrap">
+    <div class="sec-head"><p class="mono">05 — Sense Notes</p><h2 id="notes-t"><span class="en">Outside the kitchen</span>주방 밖의 감각<span class="kr">35mm 필름으로 도시의 빛을 찍고, 매일 한 잔의 커피를 감각평가 노트로 남깁니다</span></h2></div>
+    <div class="notes-ctrl"><button type="button" class="nbtn" id="prev" aria-label="이전 사진">←</button><button type="button" class="nbtn" id="next" aria-label="다음 사진">→</button></div>
+  </div>
+  <div class="strip" id="strip" tabindex="0" aria-label="감각 노트 사진 모음">
+    <figure class="note"><img src="img/note_truck.jpg" alt="햇빛이 드는 거리의 크림색 카페 트레일러와 지나가는 남자" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">오후의 빛, 크림색 트레일러. 거리의 색을 필름에 남깁니다.</span></figcaption></figure>
+    <figure class="note"><img src="img/note_beans.jpg" alt="에티오피아 워시드 원두 봉투와 원두 카드" loading="lazy"><figcaption><span class="cap-top mono"><span>Today’s cup</span><a href="https://www.instagram.com/choikomhit/">@choikomhit</a></span><span class="memo">에티오피아 워시드. 오늘의 첫 잔을 감각평가 노트에 적습니다.</span></figcaption></figure>
+    <figure class="note"><img src="img/note_stream.jpg" alt="청계천 돌담 아래를 걷는 사람과 초록 수풀" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">청계천 돌담 아래, 초록이 짙어지는 계절.</span></figcaption></figure>
+    <figure class="note"><img src="img/note_wine.jpg" alt="벽에 기대 줄지어 선 내추럴 와인 병들과 손글씨 간판" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">벽을 따라 줄지어 선 내추럴 와인과 손글씨 간판.</span></figcaption></figure>
+    <figure class="note"><img src="img/note_glass.jpg" alt="색 견본이 그려진 시음 잔에 담긴 호박색 음료" loading="lazy"><figcaption><span class="cap-top mono"><span>Tasting</span><a href="https://www.instagram.com/choikomhit/">@choikomhit</a></span><span class="memo">색 견본이 그려진 잔. 향보다 먼저 색을 기록합니다.</span></figcaption></figure>
+    <figure class="note"><img src="img/note_bridge.jpg" alt="하늘을 향해 이어지는 붉은 아치의 보행교" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">하늘을 향해 이어지는 붉은 아치의 보행교.</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="career" aria-labelledby="car-t">
+  <div class="wrap">
+    <div class="sec-head"><p class="mono">06 — Career</p><h2 id="car-t"><span class="en">Twenty-two years</span>22년 6개월의 주방<span class="kr">2003년 신라호텔 콜드 파트에서 시작했습니다</span></h2></div>
+    <div class="index">
+      <div class="row hdr mono"><span aria-hidden="true">기간</span><span aria-hidden="true">소속 · 직책</span><span class="hd3"><span aria-hidden="true">맡은 범위 <i class="lg"></i> 만든 변화</span><button type="button" class="tgl-all" id="tglAll" aria-pressed="false">모두 펼치기</button></span></div>
+      <div class="row"><span class="k">2025.10 – 2026</span><span class="v">로리스 더 프라임 립 서울 · 총괄 셰프</span><span class="d"><span class="sc">대형 메인 키친 통솔, 프라임 립 저온 로스팅·숙성 공정 관리</span><span class="rs">글로벌 레시피·매뉴얼 표준화, 원가율 분석과 식자재 수율 최적화, 파트별 공정 효율화로 운영 안정화</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2023.08 – 2025.05</span><span class="v">당크디자인하우스 보스켓 · 헤드 셰프</span><span class="d"><span class="sc">대관 행사 오퍼레이션 리드, VIP 맞춤 프리미엄 코스 기획·진행</span><span class="rs">팀원 교육으로 조리 품질 표준화, 수율·원가율 관리</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2020.12 – 2023.06</span><span class="v">지엘어소시에이츠 · F&amp;B 본부장</span><span class="d"><span class="sc">마켓+캐주얼 다이닝 복합공간 기획·오픈 전 과정, 해외 수입 식품 발굴·마켓 입점</span><span class="rs">통합 오퍼레이션 프로세스 구축, 농업법인 협업으로 지역 농산물 메뉴 개발·원가 효율화, 드라이에이징·샤퀴테리 R&amp;D</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2019.12 – 2020.07</span><span class="v">쿱한남 · 헤드 셰프</span><span class="d"><span class="sc">한남동 신규 매장 오픈, 주방 설비 레이아웃·기물·인프라 총괄</span><span class="rs">상권 맞춤 시그니처 메뉴 개발, 오픈 초기 오퍼레이션 세팅, 팀 교육으로 품질 표준화</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2018.03 – 2019.10</span><span class="v">푸드홀릭스 · R&amp;D 총괄 셰프</span><span class="d"><span class="sc">14개 전 지점 메뉴 R&amp;D·QC, 공유주방 ‘개러지키친’ 총괄</span><span class="rs">전 지점 매뉴얼 표준화와 레시피 전수, 입점 브랜드별 주방 동선·조리 프로세스 컨설팅</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2017.03 – 2018.01</span><span class="v">도미닉 · 헤드 셰프</span><span class="d"><span class="sc">제철 시즌 메뉴·시그니처 코스, 주방 동선·사입·수율 관리</span><span class="rs">시즌 메뉴의 원가율 분석과 조리 효율화로 수익성 개선</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2012.11 – 2016.12</span><span class="v">그람모키친 · 오너 셰프</span><span class="d"><span class="sc">매장 운영 전반(손익·마케팅·서비스)과 키친 총괄</span><span class="rs">외부 브랜드 메뉴 컨설팅·레시피 전수, 기업·기관 쿠킹 클래스 운영, 매체 소개 30여 회 · <a href="#grammo">아카이브</a></span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2014.03 – 2016.11</span><span class="v">건축집단 MA · 헤드 셰프<span class="tag mono" title="그람모키친 운영과 함께 진행">병행</span></span><span class="d"><span class="sc">브랜드 콘셉트 메뉴 개발, 주방 동선·사입·원가 관리</span><span class="rs">표준 레시피 구축, 팀 역량 교육과 역할 배분으로 주방 운영 안정화</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2011.11 – 2013.11</span><span class="v">갤러리시몬 · 헤드 셰프<span class="tag mono" title="그람모키친 운영과 함께 진행">병행</span></span><span class="d"><span class="sc">프라이빗 코스 메뉴 기획과 주방 운영</span><span class="rs">관공서 오프닝 행사·VIP 의전 맞춤 코스 기획과 현장 집행</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2008.12 – 2011.09</span><span class="v">마이첼시 · 헤드 셰프</span><span class="d"><span class="sc">홍석천 대표의 4번째 레스토랑 신규 오픈 총괄, 주방 설비 레이아웃</span><span class="rs">메뉴 라인업·시그니처 확립, 사입·원가·인력 교육으로 오퍼레이션 안정화</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2006.11 – 2008.12</span><span class="v">베네세레 · 이탈리안 파트장</span><span class="d"><span class="sc">생면 파스타, 수제 젤라또, 샤퀴테리, 생선·육류 드라이에이징</span><span class="rs">전 파트 조리 프로세스 세팅과 팀 업무 흐름 조정</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2004.07 – 2006.10</span><span class="v">라스트라다 · 파트장</span><span class="d"><span class="sc">콜드·핫 파트를 아우르는 이탈리안 전 메뉴</span><span class="rs">조리 공정과 플레이팅의 균일한 품질 관리</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+      <div class="row"><span class="k">2003.11 – 2004.06</span><span class="v">신라호텔 · 콜드 파트</span><span class="d"><span class="sc">첫 주방, 호텔 콜드 파트</span></span><button type="button" class="tgl" aria-expanded="false" aria-label="맡은 범위와 만든 변화 보기"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4.2 6 8l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+    </div>
+    <div class="two">
+      <div>
+        <p class="mono" style="margin:0 0 14px">What I bring</p>
+        <div class="skills">
+          <div class="skill"><h3>하이엔드 육류</h3><p>프라임 립 저온 로스팅·숙성, 생선·육류 드라이에이징</p></div>
+          <div class="skill"><h3>수제 공정</h3><p>햄·베이컨·파테 등 샤퀴테리, 달걀 생면, 젤라또</p></div>
+          <div class="skill"><h3>매장 오픈</h3><p>상권 분석, 콘셉트·메뉴 기획, 주방 레이아웃·설비</p></div>
+          <div class="skill"><h3>R&amp;D·표준화</h3><p>14개 지점 메뉴 개발·QC, 매뉴얼·레시피 전수</p></div>
+          <div class="skill"><h3>VIP·행사 다이닝</h3><p>관공서 공식 행사, VIP 케이터링, 대관 맞춤 코스</p></div>
+          <div class="skill"><h3>원가·팀 운영</h3><p>수율·원가율 관리, 공정 효율화, 위생·안전, 팀 교육</p></div>
+        </div>
+      </div>
+      <div class="edu">
+        <p class="mono" style="margin:0 0 14px">Education</p>
+        <ul><li>숙명 르 꼬르동 블루 요리·디저트 과정</li><li>츠지원 이탈리안 요리 과정</li><li>이탈리안 요리학교 입세코리아</li><li>SCA Sensory Skills · Brewing Intermediate</li><li>커피바리스타전문가 2급</li></ul>
+        <p class="mono" style="margin:28px 0 14px">Activities</p>
+        <ul><li>신세계문화센터 요리 강의</li><li>도시장터 ‘마르쉐’ 농부 협업</li><li>공공빌라 프로젝트 협업</li><li>기업·기관 프리미엄 쿠킹 클래스</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact" class="contact">
+  <div class="wrap">
+    <p class="mono" style="margin:0 0 24px">07 — Contact</p>
+    <p class="big-c rv">오래 가는 주방을<br>함께 만들겠습니다. <em>— 0.01g</em></p>
+    <div class="paths" role="list" aria-label="문의 목적별 연락">
+      <div class="path rv" role="listitem"><p class="mono pn">01 — 채용</p><h3>총괄 · 헤드셰프</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%9A%8C%EC%82%AC/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%ED%8F%AC%EC%A7%80%EC%85%98%3A%0A%C2%B7%20%EB%A7%A4%EC%9E%A5%20%EC%BD%98%EC%85%89%ED%8A%B8%EC%99%80%20%EA%B7%9C%EB%AA%A8%28%EC%A2%8C%EC%84%9D%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%9D%B8%EC%9B%90%29%3A%0A%C2%B7%20%EA%B7%BC%EB%AC%B4%20%ED%98%95%ED%83%9C%3A%0A%C2%B7%20%ED%9D%AC%EB%A7%9D%20%ED%95%A9%EB%A5%98%20%EC%8B%9C%EA%B8%B0%3A%0A"><i aria-hidden="true"></i>채용 문의</a><a class="essay-link gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com&amp;su=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%9A%8C%EC%82%AC/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%ED%8F%AC%EC%A7%80%EC%85%98%3A%0A%C2%B7%20%EB%A7%A4%EC%9E%A5%20%EC%BD%98%EC%85%89%ED%8A%B8%EC%99%80%20%EA%B7%9C%EB%AA%A8%28%EC%A2%8C%EC%84%9D%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%9D%B8%EC%9B%90%29%3A%0A%C2%B7%20%EA%B7%BC%EB%AC%B4%20%ED%98%95%ED%83%9C%3A%0A%C2%B7%20%ED%9D%AC%EB%A7%9D%20%ED%95%A9%EB%A5%98%20%EC%8B%9C%EA%B8%B0%3A%0A" target="_blank" rel="noopener"><i aria-hidden="true"></i>Gmail로 열기</a></div>
+      <div class="path rv" role="listitem"><p class="mono pn">02 — 컨설팅</p><h3>F&B 오픈 · 메뉴 자문</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%EC%BB%A8%EC%84%A4%ED%8C%85%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%EB%B8%8C%EB%9E%9C%EB%93%9C/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%EC%83%81%EA%B6%8C%EA%B3%BC%20%EC%BD%98%EC%85%89%ED%8A%B8%3A%0A%C2%B7%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B2%94%EC%9C%84%28%EB%A9%94%EB%89%B4%20%EA%B0%9C%EB%B0%9C%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%84%A4%EA%B3%84%C2%B7%EB%A0%88%EC%8B%9C%ED%94%BC%20%ED%91%9C%EC%A4%80%ED%99%94%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%A4%ED%94%88%20%EB%98%90%EB%8A%94%20%EC%A7%84%ED%96%89%20%EC%9D%BC%EC%A0%95%3A%0A%C2%B7%20%ED%98%84%EC%9E%AC%20%EB%A9%94%EB%89%B4%EC%99%80%20%EA%B3%A0%EB%AF%BC%3A%0A"><i aria-hidden="true"></i>컨설팅 문의</a><a class="essay-link gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com&amp;su=%5B%EC%BB%A8%EC%84%A4%ED%8C%85%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%EB%B8%8C%EB%9E%9C%EB%93%9C/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%EC%83%81%EA%B6%8C%EA%B3%BC%20%EC%BD%98%EC%85%89%ED%8A%B8%3A%0A%C2%B7%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B2%94%EC%9C%84%28%EB%A9%94%EB%89%B4%20%EA%B0%9C%EB%B0%9C%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%84%A4%EA%B3%84%C2%B7%EB%A0%88%EC%8B%9C%ED%94%BC%20%ED%91%9C%EC%A4%80%ED%99%94%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%A4%ED%94%88%20%EB%98%90%EB%8A%94%20%EC%A7%84%ED%96%89%20%EC%9D%BC%EC%A0%95%3A%0A%C2%B7%20%ED%98%84%EC%9E%AC%20%EB%A9%94%EB%89%B4%EC%99%80%20%EA%B3%A0%EB%AF%BC%3A%0A" target="_blank" rel="noopener"><i aria-hidden="true"></i>Gmail로 열기</a></div>
+      <div class="path rv" role="listitem"><p class="mono pn">03 — 협업 · 행사</p><h3>VIP 다이닝 · 케이터링 · 클래스</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%ED%98%91%EC%97%85%C2%B7%ED%96%89%EC%82%AC%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%96%89%EC%82%AC/%ED%98%91%EC%97%85%20%EB%82%B4%EC%9A%A9%3A%0A%C2%B7%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%9E%A5%EC%86%8C%3A%0A%C2%B7%20%EC%9D%B8%EC%9B%90%3A%0A%C2%B7%20%ED%98%95%EC%8B%9D%28%EC%BD%94%EC%8A%A4%C2%B7%EC%BC%80%EC%9D%B4%ED%84%B0%EB%A7%81%C2%B7%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%88%EC%82%B0%20%EB%B2%94%EC%9C%84%3A%0A"><i aria-hidden="true"></i>협업 · 행사 문의</a><a class="essay-link gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com&amp;su=%5B%ED%98%91%EC%97%85%C2%B7%ED%96%89%EC%82%AC%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%96%89%EC%82%AC/%ED%98%91%EC%97%85%20%EB%82%B4%EC%9A%A9%3A%0A%C2%B7%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%9E%A5%EC%86%8C%3A%0A%C2%B7%20%EC%9D%B8%EC%9B%90%3A%0A%C2%B7%20%ED%98%95%EC%8B%9D%28%EC%BD%94%EC%8A%A4%C2%B7%EC%BC%80%EC%9D%B4%ED%84%B0%EB%A7%81%C2%B7%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%88%EC%82%B0%20%EB%B2%94%EC%9C%84%3A%0A" target="_blank" rel="noopener"><i aria-hidden="true"></i>Gmail로 열기</a></div>
+    </div>
+    <div class="clist">
+      <div><p class="mono" style="margin:0">Email</p><a href="mailto:choibyungg0.01g@gmail.com">choibyungg0.01g@gmail.com</a><a class="gmail-mini" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com" target="_blank" rel="noopener">Gmail로 쓰기 ↗</a></div>
+      <div><p class="mono" style="margin:0">Instagram</p><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></div>
+      <div><p class="mono" style="margin:0">Phone</p><a href="tel:+821085779333">+82 10 8577 9333</a></div>
+    </div>
+    <div class="colophon mono"><span>© 2026 Choi Byung Goo</span><span>0.01g Defines Taste</span></div>
+  </div>
+</footer>
+
+<article id="essay" class="reader" hidden aria-labelledby="essay-title">
+  <div class="progress" aria-hidden="true"><span id="prog"></span></div>
+  <header class="r-head">
+    <div class="wrap">
+      <div class="masthead mono"><p>Essay — No. 01</p><p>The Detail Issue</p><p>읽는 시간 약 6분</p><p><a href="#top">← 포트폴리오로</a></p></div>
+      <p class="mono r-kicker">Essay</p>
+      <h1 id="essay-title" class="r-title">0.01g에 관하여</h1>
+      <p class="r-dek">어머니의 식당에서 시작해 22년. 셰프 최병구가 요리와 주방, 그리고 사람에 대해 쓴 다섯 개의 짧은 글.</p>
+      <p class="mono r-by">글 최병구 · 셰프</p>
+    </div>
+    <figure class="r-lead wrap"><div class="rl-grid"><div><img src="img/portrait.jpg" alt="체크 재킷을 입고 팔짱을 낀 최병구 셰프의 흑백 인물 사진"><figcaption class="mono">Chef Choi Byung Goo, Seoul</figcaption></div>
+      <div class="rl-aside"><p class="mono">From the essay</p><blockquote>음식으로 사람에게 감동을 전하는 일. 요리는 제게 직업을 넘어 삶의 철학이자 끝나지 않는 탐구입니다.</blockquote>
+        <dl class="rl-meta"><div><dt class="mono">Chef</dt><dd>최병구</dd></div><div><dt class="mono">Since</dt><dd>2003, 신라호텔</dd></div><div><dt class="mono">Kitchen</dt><dd>프렌치 · 이탈리안</dd></div><div><dt class="mono">Based in</dt><dd>서울</dd></div></dl></div></div></figure>
+  </header>
+
+  <div class="wrap r-body">
+    <aside class="r-side" aria-label="목차와 요약">
+      <nav class="toc" aria-label="에세이 목차">
+        <p class="mono">Contents</p>
+        <ol>
+          <li><a href="#e1">어머니의 뒷모습</a></li>
+          <li><a href="#e2">재료의 생명력</a></li>
+          <li><a href="#e3">흙을 만지는 사람들</a></li>
+          <li><a href="#e4">주방 너머의 일</a></li>
+          <li><a href="#e5">묵묵한 조화</a></li>
+        </ol>
+      </nav>
+      <dl class="glance">
+        <p class="mono">At a glance</p>
+        <div><dt class="mono">시작</dt><dd>2003년, 신라호텔 콜드 파트</dd></div>
+        <div><dt class="mono">바탕</dt><dd>프렌치와 이탈리안</dd></div>
+        <div><dt class="mono">손으로 하는 일</dt><dd>염장, 훈연, 드라이에이징, 생면</dd></div>
+        <div><dt class="mono">주방 밖에서</dt><dd>35mm 필름, 매일 한 잔의 커피</dd></div>
+        <div><dt class="mono">지키는 것</dt><dd>금연과 꾸준한 운동</dd></div>
+      </dl>
+    </aside>
+
+    <div class="r-text">
+      <section id="e1" class="chap" aria-labelledby="e1t">
+        <p class="mono chap-no">I.</p>
+        <h2 id="e1t">어머니의 뒷모습</h2>
+        <p class="dropcap">어머니는 식당을 하셨습니다. 저는 주방에 선 어머니의 뒷모습을 보며 자랐고, 요리는 그렇게 자연스럽게 제 일이 되었습니다.</p>
+        <p>그로부터 22년이 지났습니다. 신라호텔 콜드 파트에서 처음 칼을 잡았고, 이탈리안 주방의 파트장을 거쳐 헤드셰프와 오너셰프, R&amp;D 총괄, F&amp;B 본부장으로 일했습니다. 자리가 바뀌는 동안에도 처음 마음은 그대로입니다. 음식으로 사람에게 감동을 전하는 일. 요리는 제게 직업을 넘어 삶의 철학이자 끝나지 않는 탐구입니다.</p>
+      </section>
+
+      <section id="e2" class="chap" aria-labelledby="e2t">
+        <p class="mono chap-no">II.</p>
+        <h2 id="e2t">재료의 생명력</h2>
+        <p>저는 특정 장르에 갇히지 않으려 합니다. 대신 재료에서 출발합니다. 재료 본연의 맛을 가장 크게 끌어내는 방법이 무엇인지, 그 질문을 붙들고 끊임없이 새로운 조리법을 연구해 왔습니다.</p>
+        <p>가금류와 육류, 생선을 소금물에 재우는 브라인부터, 건식 숙성으로 만드는 베이컨과 햄까지 모든 과정을 직접 합니다. 시간이 오래 걸리고 손이 많이 가는 일입니다. 그래도 고집하는 이유는 이것이 단순한 기술이 아니기 때문입니다. 식재료의 생명력을 온전히 이해하고 존중하는 방식이기 때문입니다.</p>
+        <figure class="r-fig"><img src="img/ham.jpg" alt="그물에 묶여 훈연실에 매달린 훈제햄 세 덩이" loading="lazy"><figcaption class="mono">한돈 훈제햄. 염장과 훈연을 직접 거친다.</figcaption></figure>
+        <p>재미있는 것은, 이 고집이 결국 자연스러운 결실로 돌아온다는 점입니다. 재료를 통째로 이해하면 메뉴는 독창적이 되고, 버려지는 부분은 줄고, 원가는 내려갑니다. 손님이 알아채지 못할 만큼 작은 차이, 0.01g이 모여서 맛을 정합니다.</p>
+        <blockquote class="pull"><p>셰프는 맛있는 음식을 만드는 사람만이 아닙니다. 재료를 꿰뚫어 보는 안목, 주방의 시스템, 팀을 이끄는 책임까지 함께 갖춘 디렉터입니다.</p></blockquote>
+      </section>
+
+      <section id="e3" class="chap" aria-labelledby="e3t">
+        <p class="mono chap-no">III.</p>
+        <h2 id="e3t">흙을 만지는 사람들</h2>
+        <p>도시장터 ‘마르쉐’에 직접 나가면서 농부들과 오래 이어지는 관계를 맺었습니다. 흙을 만지는 생산자와 이야기를 나누다 보면, 식재료가 어떻게 자라고 무엇이 그 맛을 만드는지 책으로는 알 수 없는 것들을 배우게 됩니다.</p>
+        <p>그 시간 동안 수제 잼과 농산물 가공품을 만들었고, 나중에는 농업법인과 함께 지역 제철 농산물로 프라이빗 코스와 시즌 메뉴를 개발했습니다. 우리 농산물의 가치를 식탁 위에 온전히 올리는 일. 지금 제가 뼈대 있는 메뉴를 만들 수 있는 것은 그때 다진 바탕 덕분입니다.</p>
+      </section>
+
+      <section id="e4" class="chap" aria-labelledby="e4t">
+        <p class="mono chap-no">IV.</p>
+        <h2 id="e4t">주방 너머의 일</h2>
+        <p>여러 레스토랑의 오픈을 맡으면서 배운 것이 있습니다. 요리사는 주방 안에만 머물 수 없다는 것입니다. 식당 전체가 살아남고 자라는 일을 함께 고민해야 합니다.</p>
+        <p>그래서 저는 상권을 분석하는 일부터 시작합니다. 어떤 손님이 오는지 읽고, 그 손님에게 맞는 콘셉트와 메뉴를 기획하고, 조리 동선과 설비를 그립니다. 화려한 레시피보다 먼저 필요한 것은 현실적인 운영 시스템과 원가 관리, 그리고 조리 효율입니다. 타깃 손님을 꼼꼼히 분석해 브랜드에 맞는 메뉴를 만들고, 그것을 현장에서 무리 없이 구현해 내는 일. 제가 가장 자신 있는 분야입니다.</p>
+        <blockquote class="pull"><p>흔들림 없이, 오래 사랑받는 식당. 그 바탕을 만드는 것이 셰프의 진짜 책임이라고 믿습니다.</p></blockquote>
+      </section>
+
+      <section id="e5" class="chap" aria-labelledby="e5t">
+        <p class="mono chap-no">V.</p>
+        <h2 id="e5t">묵묵한 조화</h2>
+        <p>22년의 현장이 가르쳐 준 가장 중요한 사실은 이것입니다. 훌륭한 주방은 한 사람의 화려한 기량이 아니라, 팀 전체의 묵묵한 조화에서 나온다는 것. 진정한 존중은 직급이나 경력이 아니라 서로에 대한 신뢰에서 시작됩니다.</p>
+        <p>그래서 수평적이면서도 움직임이 효율적인 주방을 만들려고 합니다. 후배들이 스스로 자기 장점을 발견하고 키워 가는 모습을 곁에서 볼 때 가장 큰 보람을 느낍니다. 함께 땀 흘리는 모든 사람이 자기 역할에 자부심을 갖는 주방. 그것이 제 리더십의 전부입니다.</p>
+        <p>고강도의 주방에서 흔들리지 않으려면 체력도 실력입니다. 담배를 끊었고, 운동을 곁에 둡니다. 집중력은 결국 그런 사소한 습관에서 나옵니다.</p>
+      </section>
+
+      <section class="chap coda" aria-label="맺음">
+        <p class="mono chap-no">—</p>
+        <p class="coda-text">요리는 제게 평생의 숙제입니다. 매일 아침 주방의 불을 켜고 칼을 쥐는 순간부터 마지막 정리를 마칠 때까지, 같은 땀과 같은 기준으로. 0.01g을 놓치지 않는 하루가 쌓여 오늘의 접시가 됩니다.</p>
+        <p class="mono sign">— 최병구</p>
+        <a class="next-read" href="#grammo"><span class="mono">Next — Archive No. 02</span><span class="nt">그람모, 그램의 부엌</span><span class="nd">0.01g이라는 이름보다 먼저, 그램 단위의 감각을 키운 연남동의 4년</span><span class="arr" aria-hidden="true">→</span></a>
+        <p class="back-row mono"><a href="#top">← 포트폴리오로 돌아가기</a><a href="#signature">시그니처 요리</a><a href="#contact">연락하기</a></p>
+      </section>
+    </div>
+  </div>
+</article>
+
+<article id="grammo" class="reader" hidden aria-labelledby="grammo-title">
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <header class="r-head">
+    <div class="wrap">
+      <div class="masthead mono"><p>Archive — No. 02</p><p>Grammo Kitchen, 2012–2016</p><p>읽는 시간 약 8분</p><p><a href="#archive">← 포트폴리오로</a></p></div>
+      <p class="mono r-kicker">Archive</p>
+      <h1 id="grammo-title" class="r-title">그람모,<br>그램의 부엌</h1>
+      <p class="r-dek">‘그람모(grammo)’는 이탈리아어로 그램(g)입니다. 2012년 연남동 주택가에 문을 연 테이블 세 개짜리 부엌에서, 0.01g의 감각은 처음 이름을 얻었습니다.</p>
+      <p class="mono r-by">기록 · 셰프 블로그 「playfood」 2012–2016, 손님 방문기 28편</p>
+    </div>
+    <div class="wrap"><div class="g-figs">
+      <div class="g-fig"><p class="n">3</p><p class="mono">테이블</p></div>
+      <div class="g-fig"><p class="n">100<small>%</small></p><p class="mono">예약제</p></div>
+      <div class="g-fig"><p class="n">0</p><p class="mono">메뉴판</p></div>
+      <div class="g-fig"><p class="n">4<small>년 1개월</small></p><p class="mono">2012.11 – 2016.12</p></div>
+    </div></div>
+  </header>
+
+  <div class="wrap r-body">
+    <aside class="r-side" aria-label="목차와 요약">
+      <nav class="toc" aria-label="아카이브 목차">
+        <p class="mono">Contents</p>
+        <ol>
+          <li><a href="#g1">메뉴판 없는 레스토랑</a></li>
+          <li><a href="#g2">시간도 계량합니다</a></li>
+          <li><a href="#g3">밀을 고르는 일</a></li>
+          <li><a href="#g4">가르치는 부엌</a></li>
+          <li><a href="#g5">작은 가게의 리더십</a></li>
+          <li><a href="#g6">지면과 화면</a></li>
+          <li><a href="#g7">손님의 기록</a></li>
+        </ol>
+      </nav>
+      <dl class="glance">
+        <p class="mono">In the next kitchen</p>
+        <div><dt class="mono">매일 바뀐 메뉴</dt><dd>시장과 제철에서 출발하는 메뉴 설계</dd></div>
+        <div><dt class="mono">직접 만든 빵·잼·판체타</dt><dd>원재료를 끝까지 쓰는 인하우스 생산과 원가 감각</dd></div>
+        <div><dt class="mono">4년의 클래스와 출강</dt><dd>레시피를 말로 풀어 가르치는 팀 교육</dd></div>
+        <div><dt class="mono">직접 운영한 가게</dt><dd>손익과 손님을 함께 보는 주방장</dd></div>
+      </dl>
+    </aside>
+
+    <div class="r-text">
+      <section id="g1" class="chap" aria-labelledby="g1t">
+        <p class="mono chap-no">I.</p>
+        <h2 id="g1t">메뉴판 없는 레스토랑</h2>
+        <p class="dropcap">그람모키친은 원래 빵과 잼을 만드는 작업실이었습니다. 주변에 밥 먹을 곳이 없다는 이웃들의 부탁에 그날 그날의 재료로 요리를 내기 시작했고, 간판 없는 부엌은 자연스럽게 100% 예약제 레스토랑이 되었습니다.</p>
+        <p>테이블은 세 개. 메뉴판은 없었습니다. 메뉴는 그날 시장에서 들어온 재료와 예약한 손님의 취향으로 정해졌고, 재료가 떨어지면 그 요리도 끝이었습니다. 예약을 받을 때는 알레르기와 못 먹는 음식을 물었습니다. 평일에는 파스타와 단품을, 월요일에는 셰프의 코스를 냈습니다.</p>
+        <p>매일 손으로 반죽한 호밀빵이 식전 빵으로 나갔고, 직접 끓인 잼과 페스토가 그 옆에 놓였습니다. 오픈 키친 너머로 손님은 자기 접시가 만들어지는 과정을 처음부터 끝까지 볼 수 있었습니다.</p>
+        <blockquote class="pull"><p>식전 빵은 레스토랑의 기본을 알 수 있는 환영 음식이라 생각합니다.</p><cite class="mono">셰프 블로그, 2013.07</cite></blockquote>
+      </section>
+
+      <section id="g2" class="chap" aria-labelledby="g2t">
+        <p class="mono chap-no">II.</p>
+        <h2 id="g2t">시간도 계량합니다</h2>
+        <p>그람모의 냉장고와 선반에는 시간이 쌓여 있었습니다. 무게를 재듯 시간을 재고, 기다린 만큼만 맛이 된다는 것을 매일 확인하는 부엌이었습니다.</p>
+        <div class="tindex" role="list">
+          <div class="t" role="listitem"><span class="n">12<small>시간</small></span><span class="v">소뼈 육수로 끓인 비프 스튜 파스타</span><span class="d mono">2013.03</span></div>
+          <div class="t" role="listitem"><span class="n">48<small>시간</small></span><span class="v">함양 통밀로 새로 키운 발효종</span><span class="d mono">2016.07</span></div>
+          <div class="t" role="listitem"><span class="n">7<small>일</small></span><span class="v">일주일 발효종으로 구운 건강빵</span><span class="d mono">2012.12</span></div>
+          <div class="t" role="listitem"><span class="n">15<small>일</small></span><span class="v">보름 동안 발효시킨 크리스마스 깡파뉴</span><span class="d mono">2012.12</span></div>
+          <div class="t" role="listitem"><span class="n">30<small>일</small></span><span class="v">한 달을 이어 키운 발효종</span><span class="d mono">2013.01</span></div>
+          <div class="t" role="listitem"><span class="n">4<small>개월</small></span><span class="v">염지해 숙성시킨 판체타</span><span class="d mono">2013.07</span></div>
+        </div>
+        <p>빵과 염장육 말고도 선반은 손으로 만든 것들로 채워졌습니다. 밀크잼과 로얄 밀크티잼, 천연 펙틴으로 만든 계절 과일 잼, 생바질 페스토와 딜 페스토, 토마토·사과 처트니, 쇠고기 리예뜨, 홈메이드 버터, 우메보시와 매실청까지. 잼은 잡지 ELLE의 ‘수제 잼 실험실’, CASA의 ‘프리미엄 밀크잼’ 기사로 소개되었습니다.</p>
+        <blockquote class="pull"><p>빵은 기다림의 미학입니다.</p><cite class="mono">셰프 블로그, 2016.07</cite></blockquote>
+      </section>
+
+      <section id="g3" class="chap" aria-labelledby="g3t">
+        <p class="mono chap-no">III.</p>
+        <h2 id="g3t">밀을 고르는 일</h2>
+        <p>빵의 맛은 밀에서 시작한다고 믿었습니다. 그래서 밀부터 골랐습니다. 토종 앉은뱅이밀과 금강밀, 국산 호밀은 100%·80%·60%로 비율을 바꿔 가며 구웠고, 함양 농가의 통밀로 새 발효종을 키웠습니다. 프랑스 밀 T65로 굽는 시골빵 ‘뺑드 그람모’는 그람모의 이름을 단 빵이 되었습니다.</p>
+        <p>식재료는 새벽길을 달려 강릉 주문진 어시장에서 직접 골라 주말 식탁에 올리기도 했습니다. 2012년 도시장터 ‘마르쉐’가 처음 열릴 때부터 4년 동안 혜화, 서초, 양재, 성수의 장터에 빵과 잼을 들고 나갔고, 그 자리에서 밀과 채소를 기르는 농부들을 만났습니다.</p>
+        <div class="kv" role="list">
+          <div role="listitem"><span class="mono">Grain</span><span>앉은뱅이밀 · 금강밀 · 국산 호밀 · 함양 통밀 · 프랑스 밀 T65</span></div>
+          <div role="listitem"><span class="mono">Bread</span><span>뺑드 그람모 · 깡파뉴 · 루스틱 · 바게트 · 뺑드미 · 포카치아 · 그리시니</span></div>
+          <div role="listitem"><span class="mono">Market</span><span>마르쉐@혜화·서초·양재·성수 · 과자전 · 그람모 ‘장바구니 마켓’</span></div>
+        </div>
+        <blockquote class="pull"><p>요리에 대해서는 식재료를 생산하시는 분들이 있어요. 그분들을 통해 많이 배우죠.</p><cite class="mono">인터뷰, 2014</cite></blockquote>
+      </section>
+
+      <section id="g4" class="chap" aria-labelledby="g4t">
+        <p class="mono chap-no">IV.</p>
+        <h2 id="g4t">가르치는 부엌</h2>
+        <p>장터에서 만난 사람들은 무엇을 먹는지보다 어떻게 만드는지를 더 궁금해했습니다. 파스타는 소스가 아니라 면의 맛으로 먹는 음식이라는 것, 그런 기본을 제대로 알리고 싶어 시작한 것이 쿠킹 클래스입니다. 테이블 세 개짜리 부엌은 저녁이면 교실이 되었습니다.</p>
+        <div class="tl" role="list">
+          <div class="r" role="listitem"><span class="k mono">2013.05</span><span class="v">이탈리안 키친 클래스 ‘나의 작은 키친 이야기’</span><span class="d">매주 월요일, 6명 정원</span></div>
+          <div class="r" role="listitem"><span class="k mono">2013</span><span class="v">프랑스 디저트·토마토·파티 워크숍</span><span class="d">원데이 클래스</span></div>
+          <div class="r" role="listitem"><span class="k mono">2014.03</span><span class="v">프랑스 가정요리 클래스</span><span class="d">꼬꼬뱅, 뵈프 부르기뇽, 알자스 해산물 슈크루트까지 매달 새 커리큘럼</span></div>
+          <div class="r" role="listitem"><span class="k mono">2014.05</span><span class="v">이탈리안·지중해 쿠킹 클래스, 홈메이드 파스타 클래스</span><span class="d">손반죽 생면</span></div>
+          <div class="r" role="listitem"><span class="k mono">2014.08</span><span class="v">현대백화점·신세계백화점 문화센터 출강</span><span class="d">외부 강의</span></div>
+          <div class="r" role="listitem"><span class="k mono">2014.09 – 2016</span><span class="v">프랑스 발효종 제빵 클래스</span><span class="d">3개월 과정, 1:2 소수 정원, 기계 없이 손반죽</span></div>
+          <div class="r" role="listitem"><span class="k mono">2015</span><span class="v">수제잼·처트니 워크숍</span><span class="d">제철 딸기와 사과</span></div>
+          <div class="r" role="listitem"><span class="k mono">2016.01</span><span class="v">카페·비스트로 창업 메뉴 컨설팅</span><span class="d">상권에 맞춘 메뉴 제안</span></div>
+        </div>
+        <p>제빵 클래스에서는 반죽기를 쓰지 않았습니다. 손으로 반죽해야 글루텐이 생기는 과정과 반죽의 탄력을 몸으로 익힐 수 있기 때문입니다. 밀가루와 물, 천연 효모의 이론에서 시작해 굽기까지, 한 단계도 건너뛰지 않는 수업이었습니다.</p>
+      </section>
+
+      <section id="g5" class="chap" aria-labelledby="g5t">
+        <p class="mono chap-no">V.</p>
+        <h2 id="g5t">작은 가게의 리더십</h2>
+        <p>직접 가게를 운영하며 셰프는 주방 밖의 일을 배웠습니다. 2016년 블로그에 남긴 두 편의 글, 「창업은 투자가 아니다」와 「리더의 조건」에는 그 시간이 고스란히 담겨 있습니다. 장사가 안 되는 이유를 직원에게서 찾지 말 것. 스타 플레이어보다 동료가 골을 넣게 돕는 사람이 팀을 이기게 한다는 것.</p>
+        <blockquote class="pull"><p>업주 스스로가 자발적 직원이 되는 마인드로 운영해야 발전할 것입니다.</p><cite class="mono">「창업은 투자가 아니다」, 2016.01</cite></blockquote>
+        <blockquote class="pull"><p>리더의 힘은 함께 속한 팀원들과 함께할 때 비로소 발휘됩니다.</p><cite class="mono">「리더의 조건」, 2016.02</cite></blockquote>
+        <p>요리사에게 가장 큰 행복이 무엇이냐는 물음에, 셰프는 손님이 비운 마지막 접시를 확인할 때라고 적었습니다. 작은 가게의 리더십은 결국 그 접시 하나를 위해 모두가 같은 방향을 보는 일이었습니다.</p>
+      </section>
+
+      <section id="g6" class="chap" aria-labelledby="g6t">
+        <p class="mono chap-no">VI.</p>
+        <h2 id="g6t">지면과 화면</h2>
+        <p>간판도 없던 작은 부엌은 4년 동안 잡지와 방송에 서른 번 넘게 소개되었습니다.</p>
+        <div class="press" role="list">
+          <div class="y" role="listitem"><span class="k mono">2012</span><span>Babee</span></div>
+          <div class="y" role="listitem"><span class="k mono">2013</span><span>TrendE 〈올 어바웃 트렌드〉 · W Korea · ESSEN · ELLE · 여성중앙 · The Korea Herald · CASA · 마리끌레르 · OBS 〈으랏차차 7시〉 · Gentleman · 리빙센스 · CeCi</span></div>
+          <div class="y" role="listitem"><span class="k mono">2014</span><span>allure · Babee · OBS 〈셰프 앤 테이스트〉 · CASA · W Korea · 여성동아 · 스트리트 H · 아리랑TV 〈Korea Today〉 · CeCi</span></div>
+          <div class="y" role="listitem"><span class="k mono">2015</span><span>리빙센스 · sure · olive · STYLE H · SBS 〈좋은아침〉 · 메종 마리끌레르 · MBC 〈생방송 오늘저녁〉</span></div>
+          <div class="y" role="listitem"><span class="k mono">2016</span><span>Bar &amp; Dining</span></div>
+        </div>
+      </section>
+
+      <section id="g7" class="chap" aria-labelledby="g7t">
+        <p class="mono chap-no">VII.</p>
+        <h2 id="g7t">손님의 기록</h2>
+        <p>그람모를 다녀간 손님과 수강생들의 방문기에 가장 자주 나온 단어는 ‘재료’와 ‘정성’이었습니다.</p>
+        <ul class="voices">
+          <li>“친구 집에 초대받은 느낌.”</li>
+          <li>“정성스럽고 단아한 맛.”</li>
+          <li>“재료 본연의 맛을 충분히 살리려 한 레시피.”</li>
+          <li>“예약할 때 알레르기나 못 먹는 음식을 여쭤봐 주시는 꼼꼼함.”</li>
+          <li>“프랑스지만 그 안에 이태리가 있다. 그리고 한국도 있다.”</li>
+          <li>“과정을 부랴부랴 지나가지 않고 꼼꼼하고 섬세하게.”</li>
+        </ul>
+        <p class="r-note">네이버 블로그 방문기 중 일부 표현을 짧게 옮겼습니다.</p>
+      </section>
+
+      <section class="chap coda" aria-label="맺음">
+        <p class="mono chap-no">—</p>
+        <p class="coda-text">2016년 겨울, 셰프는 그람모키친을 마무리했습니다. 그러나 그램 단위로 재고, 시간을 들여 기다리고, 손님의 마지막 접시를 확인하던 습관은 이후의 모든 주방으로 옮겨 갔습니다. 그람모에서 0.01g까지, 같은 저울 위의 이야기입니다.</p>
+        <a class="next-read" href="#essay"><span class="mono">Next — Essay No. 01</span><span class="nt">0.01g에 관하여</span><span class="nd">어머니의 식당에서 시작해 22년, 셰프가 직접 쓴 다섯 개의 짧은 글</span><span class="arr" aria-hidden="true">→</span></a>
+        <p class="back-row mono"><a href="#archive">← 포트폴리오로 돌아가기</a><a href="#career">경력</a><a href="#contact">연락하기</a></p>
+      </section>
+    </div>
+  </div>
+</article>
+
+
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var stage=document.getElementById('stage'), dot=document.getElementById('dot'), meas=document.getElementById('meas'), cnt=document.getElementById('cntV');
+
+
+  // A precision-scale readout hangs under the beam at the dot's place
+  var dotw=document.getElementById('dotw'), stt=document.getElementById('stt'), nameEl=document.getElementById('name'), beam=document.getElementById('beam');
+  function place(){
+    var st=stage.getBoundingClientRect(), w=dotw.getBoundingClientRect(), pl=nameEl.querySelector('.plat').getBoundingClientRect();
+    meas.style.width='1px'; meas.style.height='1px';
+    meas.style.left=(w.left+w.width/2 - st.left)+'px';
+    meas.style.top=(pl.bottom - st.top + 2)+'px';
+  }
+  function showScale(){ place(); meas.style.transition=reduce?'none':'opacity .12s ease'; meas.style.opacity='1'; }
+  // like a precision scale registering the weight: 0.000 → 0.010, then it settles on 0.01 g
+  function count(){
+    if(reduce){ cnt.textContent='0.01'; stt.textContent='STABLE'; stt.classList.add('ok'); return; }
+    var steps=['0.001','0.002','0.004','0.006','0.007','0.008','0.009','0.010','0.011','0.010','0.010'];
+    var t=0; steps.forEach(function(v,i){ t+= i<7 ? 70 : 150; setTimeout(function(){ cnt.textContent=v; }, t); });
+    setTimeout(function(){ cnt.textContent='0.01'; stt.textContent='STABLE'; stt.classList.add('ok'); }, t+450);
+  }
+  var ready=(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve());
+  if(root.classList.contains('intro')){
+    ready.then(function(){ requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      root.classList.add('play');
+      cnt.textContent='0.000';
+      // nothing on the scale until the dot lands; then the reading appears and counts
+      // the reading appears the instant the dot touches down
+      var landed=false;
+      function land(){ if(landed) return; landed=true; showScale(); count(); beam.classList.add('level'); follow(); }
+      // the readout rides with the beam while it levels, then settles exactly under the dot
+      var levelling=true;
+      function follow(){ place(); if(levelling) requestAnimationFrame(follow); }
+      beam.addEventListener('animationend',function(e){ if(e.animationName==='level'){ levelling=false; place(); } });
+      dot.addEventListener('animationend',function(e){ if(e.animationName==='drift') land(); });
+      setTimeout(land,2700);
+    }); }); });
+  } else {
+    ready.then(function(){ showScale(); count(); });
+  }
+  addEventListener('resize',function(){ if(meas.style.opacity==='1') place(); });
+  // the essay link's rule continues the scale line: line up its underline with the platform
+  var side=document.querySelector('.side'), sideLink=side&&side.querySelector('.essay-link'), plat=nameEl.querySelector('.plat');
+  function alignSide(){
+    if(!side||!sideLink) return;
+    side.style.marginBottom='';
+    if(matchMedia('(max-width:760px)').matches) return;
+    var st=stage.getBoundingClientRect();
+    var lineY=plat.offsetHeight, el=plat; while(el && el!==stage){ lineY+=el.offsetTop; el=el.offsetParent; }   // offsets ignore the beam's tilt
+    var linkY=sideLink.getBoundingClientRect().bottom-st.top;
+    side.style.marginBottom=(linkY-lineY)+'px';
+  }
+  ready.then(alignSide); addEventListener('resize',alignSide);
+
+  // Header
+  var bar=document.getElementById('bar');
+  function onS(){ bar.classList.toggle('solid', scrollY>40); }
+  addEventListener('scroll',onS,{passive:true}); onS();
+
+  // Statement words + kerning
+  var big=document.getElementById('big');
+  var parts=big.textContent.split(/(\s+)/); big.textContent='';
+  parts.forEach(function(w){ if(!w) return; if(/^\s+$/.test(w)){ big.appendChild(document.createTextNode(w)); return; } var s=document.createElement('span'); s.className='w'; s.textContent=w; big.appendChild(s); });
+  var words=big.querySelectorAll('.w'), kern=document.getElementById('kern'), trk=document.getElementById('trk');
+  function prog(el,a,b){ var r=el.getBoundingClientRect(), h=innerHeight; return Math.min(1,Math.max(0,(h*a-r.top)/(h*b))); }
+  function onRead(){
+    var p=reduce?1:prog(big,0.85,0.5), n=Math.round(p*words.length);
+    for(var i=0;i<words.length;i++) words[i].classList.toggle('on',i<n);
+    var k=reduce?1:prog(kern,0.98,0.55), ls=(1-k)*0.14-0.02; kern.style.letterSpacing=ls.toFixed(3)+'em'; if(trk) trk.textContent=(ls<0?'−':'+')+Math.abs(ls).toFixed(3);
+  }
+  addEventListener('scroll',onRead,{passive:true}); addEventListener('resize',onRead); onRead();
+
+  // Reveal + count-up
+  if('IntersectionObserver' in window && !reduce){
+    root.classList.add('js');
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; e.target.classList.add('in'); var c=e.target.querySelector('.cu'); if(c){ var to=+c.dataset.to,t0=performance.now(); (function u(t){ var p=Math.min(1,(t-t0)/1100); c.textContent=Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(u); })(t0);} io.unobserve(e.target); }); },{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  }
+
+  // Notes strip
+  var strip=document.getElementById('strip');
+  function step(d){ var c=strip.querySelector('.note'); strip.scrollBy({left:d*((c?c.getBoundingClientRect().width:300)+18),behavior:reduce?'auto':'smooth'}); }
+  document.getElementById('prev').addEventListener('click',function(){step(-1);});
+  document.getElementById('next').addEventListener('click',function(){step(1);});
+  strip.addEventListener('keydown',function(e){ if(e.key==='ArrowRight'){e.preventDefault();step(1);} if(e.key==='ArrowLeft'){e.preventDefault();step(-1);} });
+  var pb=document.getElementById('prev'), nb=document.getElementById('next');
+  function ends(){ var max=strip.scrollWidth-strip.clientWidth-2; pb.disabled=strip.scrollLeft<=2; nb.disabled=strip.scrollLeft>=max; }
+  strip.addEventListener('scroll',ends,{passive:true}); addEventListener('resize',ends); ends();
+  // drag to scroll with a mouse
+  var dragX=null, startL=0, moved=false;
+  strip.addEventListener('pointerdown',function(e){ if(e.pointerType!=='mouse'||e.button!==0) return; dragX=e.clientX; startL=strip.scrollLeft; moved=false; });
+  addEventListener('pointermove',function(e){ if(dragX===null) return; var dx=e.clientX-dragX; if(Math.abs(dx)>4){ moved=true; strip.classList.add('drag'); } if(moved) strip.scrollLeft=startL-dx; });
+  addEventListener('pointerup',function(){ if(dragX===null) return; dragX=null; if(moved){ var c=strip.querySelector('.note'), w=(c?c.getBoundingClientRect().width:300)+18; strip.classList.remove('drag'); strip.scrollTo({left:Math.round(strip.scrollLeft/w)*w,behavior:reduce?'auto':'smooth'}); } });
+  strip.addEventListener('click',function(e){ if(moved){ e.stopPropagation(); e.preventDefault(); moved=false; } },true);
+
+  // Lightbox for dishes and notes
+  var lb=document.getElementById('lb'), lbimg=document.getElementById('lbimg'), lbk=document.getElementById('lbk'), lbt=document.getElementById('lbt'), lbd=document.getElementById('lbd');
+  function openLb(img,k,t,d){ lbimg.src=img.currentSrc||img.src; lbimg.alt=img.alt; lbk.textContent=k||''; lbt.textContent=t||''; lbd.textContent=d||''; if(lb.showModal) lb.showModal(); else lb.setAttribute('open',''); }
+  document.querySelectorAll('.fig').forEach(function(f){
+    var ph=f.querySelector('.ph'), img=f.querySelector('img'); if(!ph||!img) return;
+    ph.setAttribute('role','button'); ph.setAttribute('tabindex','0'); ph.setAttribute('aria-label',(f.querySelector('h3')||{}).textContent+' 크게 보기');
+    function go(){ var memo=f.querySelector('.memo'); openLb(img, (f.querySelector('figcaption .mono')||{}).textContent, (f.querySelector('h3')||{}).textContent, memo?memo.childNodes[1].textContent:(f.querySelector('figcaption p')||{}).textContent); }
+    ph.addEventListener('click',go); ph.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
+  document.querySelectorAll('.note').forEach(function(n){
+    var img=n.querySelector('img'); if(!img) return;
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    function go(){ var top=n.querySelector('.cap-top span'), memo=n.querySelector('.memo'); openLb(img, top?top.textContent:'', img.alt, memo?memo.textContent:''); }
+    img.addEventListener('click',function(){ if(!strip.classList.contains('drag')) go(); }); img.addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); go(); } });
+  });
+  document.getElementById('lbx').addEventListener('click',function(){ lb.close?lb.close():lb.removeAttribute('open'); });
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+
+  // Mobile menu
+  var mbtn=document.getElementById('mbtn'), barEl=document.getElementById('bar');
+  mbtn.addEventListener('click',function(){ var o=barEl.classList.toggle('open'); mbtn.setAttribute('aria-expanded',o); mbtn.textContent=o?'Close':'Menu'; });
+  document.querySelectorAll('#mnav a').forEach(function(a){ a.addEventListener('click',function(){ barEl.classList.remove('open'); mbtn.setAttribute('aria-expanded','false'); mbtn.textContent='Menu'; }); });
+
+  // 0.01g cursor
+  if(!reduce && matchMedia('(pointer:fine)').matches){
+    var cur=document.getElementById('cur'); root.classList.add('has-cur');
+    var x=-99,y=-99,cx=-99,cy=-99;
+    addEventListener('pointermove',function(e){x=e.clientX;y=e.clientY;},{passive:true});
+    document.querySelectorAll('.fig .ph, .note img').forEach(function(el){
+      el.addEventListener('pointerenter',function(){cur.classList.add('big');});
+      el.addEventListener('pointerleave',function(){cur.classList.remove('big');});
+    });
+    document.querySelectorAll('a, button').forEach(function(el){
+      el.addEventListener('pointerenter',function(){cur.classList.add('lnk');});
+      el.addEventListener('pointerleave',function(){cur.classList.remove('lnk');});
+    });
+    (function lp(){ cx+=(x-cx)*.3; cy+=(y-cy)*.3; cur.style.transform='translate('+cx+'px,'+cy+'px)'; requestAnimationFrame(lp); })();
+  }
+})();
+</script>
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var readers=[
+    {el:document.getElementById('essay'), ids:['essay','e1','e2','e3','e4','e5']},
+    {el:document.getElementById('grammo'), ids:['grammo','g1','g2','g3','g4','g5','g6','g7']}
+  ];
+  readers.forEach(function(r){
+    r.prog=r.el.querySelector('.progress span');
+    r.links=Array.prototype.slice.call(r.el.querySelectorAll('.toc a'));
+    r.chaps=r.links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));});
+  });
+  var active=null;
+  function route(){
+    var h=location.hash.replace('#','');
+    var next=null;
+    readers.forEach(function(r){ if(r.ids.indexOf(h)>-1) next=r; });
+    var was=active;
+    readers.forEach(function(r){ r.el.hidden=(r!==next); });
+    var mid=document.getElementById('midRead');
+    if(mid) mid.textContent = next ? (next.ids[0]==='essay' ? 'Essay — 0.01g에 관하여' : 'Archive — 그람모, 그램의 부엌') : '';
+    document.querySelectorAll('.rnav a[data-r]').forEach(function(a){ if(next && a.getAttribute('data-r')===next.ids[0]) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    document.body.classList.toggle('reading',!!next);
+    if(next!==was){
+      var els = next ? [next.el] : [document.querySelector('.hero'), document.querySelector('main'), document.getElementById('contact')];
+      els.forEach(function(el){ if(!el) return; el.classList.remove('enter'); void el.offsetWidth; el.classList.add('enter'); setTimeout(function(){ el.classList.remove('enter'); },500); });
+    }
+    active=next;
+    if(next && (h===next.ids[0] || was!==next)){ if(h===next.ids[0]) window.scrollTo(0,0); else { var t=document.getElementById(h); if(t) t.scrollIntoView(); } }
+    if(!next && was && h){ var tgt=document.getElementById(h); if(tgt) requestAnimationFrame(function(){ tgt.scrollIntoView(); }); }
+    onScroll();
+  }
+  function onScroll(){
+    if(!active) return;
+    var max=document.documentElement.scrollHeight-innerHeight; active.prog.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%';
+    var cur=0; active.chaps.forEach(function(c,i){ if(c && c.getBoundingClientRect().top < innerHeight*0.35) cur=i; });
+    active.links.forEach(function(a,i){ a.classList.toggle('on', i===cur); });
+  }
+  addEventListener('hashchange',route); addEventListener('scroll',onScroll,{passive:true});
+  route();
+})();
+</script>
+<script>
+(function(){
+  var rows=[].slice.call(document.querySelectorAll('#career .row:not(.hdr)')), all=document.getElementById('tglAll');
+  function set(r,on){ r.classList.toggle('open',on); var b=r.querySelector('.tgl'); if(b){ b.setAttribute('aria-expanded',on?'true':'false'); b.setAttribute('aria-label',on?'맡은 범위와 만든 변화 접기':'맡은 범위와 만든 변화 보기'); } }
+  function sync(){ var every=rows.every(function(r){return r.classList.contains('open');}); if(all){ all.textContent=every?'모두 접기':'모두 펼치기'; all.setAttribute('aria-pressed',every?'true':'false'); } }
+  rows.forEach(function(r){
+    r.addEventListener('click',function(e){ if(e.target.closest('a')) return; set(r,!r.classList.contains('open')); sync(); });
+  });
+  if(all) all.addEventListener('click',function(){ var every=rows.every(function(r){return r.classList.contains('open');}); rows.forEach(function(r){set(r,!every);}); sync(); });
+})();
+</script>
+<script>
+/* 순바탕 자간을 좁힌 문장 안의 영문·숫자(Abhaya)는 자간을 따로 유지 */
+(function(){
+  var sel='.side .lead,.fig h3,.voices li,.r-dek,.essay h3,.path h3,.coda-text,.big,.arch-lead,.next-read .nt,.chap h2,.sec-head h2,.r-title,.contact .big-c,.pull p,.rl-aside blockquote';
+  var re=/[A-Za-z0-9](?:[A-Za-z0-9.'’%\-–]*[A-Za-z0-9%])?/g;
+  document.querySelectorAll(sel).forEach(function(root){
+    var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentElement;return (p.closest('.en,.kr,.lat,sup')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT);}}),list=[],n;
+    while(n=w.nextNode()) if(/[A-Za-z0-9]/.test(n.nodeValue)) list.push(n);
+    list.forEach(function(t){
+      var v=t.nodeValue,f=document.createDocumentFragment(),last=0,m;re.lastIndex=0;
+      while(m=re.exec(v)){ if(m.index>last) f.appendChild(document.createTextNode(v.slice(last,m.index))); var s=document.createElement('span'); s.className='lat'; s.textContent=m[0].slice(0,-1); if(s.textContent) f.appendChild(s); f.appendChild(document.createTextNode(m[0].slice(-1))); last=m.index+m[0].length; }
+      if(last<v.length) f.appendChild(document.createTextNode(v.slice(last)));
+      t.parentNode.replaceChild(f,t);
+    });
+  });
+  if(window.dispatchEvent) window.dispatchEvent(new Event('resize'));
+})();
+</script>
+</body>
+</html>
