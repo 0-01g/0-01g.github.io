@@ -188,6 +188,9 @@ section{padding:clamp(5rem,10vw,9rem) 0}
 /* reveal */
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
 .js .rv.in{opacity:1;transform:none}
+/* signature cards: rise from far below one after another and settle into place */
+.js .spread .fig.rv{opacity:0;transform:translateY(170px) scale(.96);transition:opacity .8s ease var(--d,0s),transform 1.5s cubic-bezier(.22,1.2,.36,1) var(--d,0s);will-change:transform,opacity}
+.js .spread .fig.rv.in{opacity:1;transform:none}
 
 /* 0.01g cursor */
 .cur{position:fixed;left:0;top:0;z-index:200;pointer-events:none;display:none}
@@ -371,8 +374,6 @@ main section[id]{scroll-margin-top:72px}
 .path .pneed .mono{display:block;margin-bottom:4px}
 .path .essay-link{align-self:flex-start;border-bottom:0;padding-bottom:0}
 .path .essay-link:hover{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px}
-.path .gmail-link{margin-top:12px;font-size:.84rem;color:var(--ink2)}
-.clist .gmail-mini{display:block;margin-top:8px;font-size:.84rem;font-weight:400;color:var(--ink2)}
 @media (max-width:860px){.paths{grid-template-columns:1fr}.path,.path + .path{padding:18px 0 26px;border-right:0;border-bottom:1px solid var(--line)}}
 
 .row .v .tag{display:inline-block;margin-left:8px;padding:1px 6px 0;border:1px solid var(--line);font-size:.64rem;letter-spacing:.06em;color:var(--ink2);vertical-align:2px;font-weight:400}
@@ -546,7 +547,7 @@ body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.0
 
 <header class="bar" id="bar">
   <div class="wrap">
-    <a class="who" href="#top">최병구<i>Chef</i></a>
+    <a class="who" href="#top">Choi Byung Goo<i>Chef</i></a>
     <p class="mid mono" style="margin:0"><span class="mid-home">0.01g Defines Taste</span><span class="mid-read" id="midRead"></span></p>
     <nav aria-label="주요 메뉴">
       <button type="button" class="mbtn mono" id="mbtn" aria-expanded="false" aria-controls="mnav">Menu</button>
@@ -613,7 +614,7 @@ body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.0
     <div class="st-grid"><span></span><div><a class="essay-link" href="#essay"><i aria-hidden="true"></i>셰프가 직접 쓴 이야기, 에세이로 읽기</a></div>
     </div>
     <p class="kern" id="kern" lang="ko">모든 <span class="acc">0.01g</span>이 맛이 됩니다.</p>
-    <div class="kern-meta mono"><span>Every 0.01g counts.</span><span>Tracking <b id="trk">+0.120</b>em</span></div>
+    <div class="kern-meta mono"><span>Every 0.01g counts.</span><span>Tracking <b id="trk">+0.090</b>em</span></div>
   </div>
 </section>
 
@@ -623,7 +624,7 @@ body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.0
       <div class="stat rv"><p class="n"><span class="cu" data-to="22">22</span><small>년</small></p><p>주방 경력</p></div>
       <div class="stat rv"><p class="n"><span class="cu" data-to="13">13</span><small>곳</small></p><p>거쳐 온 주방</p></div>
       <div class="stat rv"><p class="n"><span class="cu" data-to="14">14</span><small>개</small></p><p>R&amp;D·품질 총괄 지점</p></div>
-      <div class="stat rv"><p class="n"><span class="cu" data-to="3">3</span><small>곳</small></p><p>신규 매장 오픈 총괄</p></div>
+      <div class="stat rv"><p class="n"><span class="cu" data-to="14">14</span><small>곳</small></p><p>신규 매장 오픈 총괄</p></div>
     </div>
   </div>
 </div>
@@ -680,12 +681,16 @@ body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.0
     <div class="notes-ctrl"><button type="button" class="nbtn" id="prev" aria-label="이전 사진">←</button><button type="button" class="nbtn" id="next" aria-label="다음 사진">→</button></div>
   </div>
   <div class="strip" id="strip" tabindex="0" aria-label="감각 노트 사진 모음">
-    <figure class="note"><img src="img/note_truck.jpg" alt="햇빛이 드는 거리의 크림색 카페 트레일러와 지나가는 남자" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">오후의 빛, 크림색 트레일러. 거리의 색을 필름에 남깁니다.</span></figcaption></figure>
-    <figure class="note"><img src="img/note_beans.jpg" alt="에티오피아 워시드 원두 봉투와 원두 카드" loading="lazy"><figcaption><span class="cap-top mono"><span>Today’s cup</span><a href="https://www.instagram.com/choikomhit/">@choikomhit</a></span><span class="memo">에티오피아 워시드. 오늘의 첫 잔을 감각평가 노트에 적습니다.</span></figcaption></figure>
-    <figure class="note"><img src="img/note_stream.jpg" alt="청계천 돌담 아래를 걷는 사람과 초록 수풀" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">청계천 돌담 아래, 초록이 짙어지는 계절.</span></figcaption></figure>
-    <figure class="note"><img src="img/note_wine.jpg" alt="벽에 기대 줄지어 선 내추럴 와인 병들과 손글씨 간판" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">벽을 따라 줄지어 선 내추럴 와인과 손글씨 간판.</span></figcaption></figure>
-    <figure class="note"><img src="img/note_glass.jpg" alt="색 견본이 그려진 시음 잔에 담긴 호박색 음료" loading="lazy"><figcaption><span class="cap-top mono"><span>Tasting</span><a href="https://www.instagram.com/choikomhit/">@choikomhit</a></span><span class="memo">색 견본이 그려진 잔. 향보다 먼저 색을 기록합니다.</span></figcaption></figure>
-    <figure class="note"><img src="img/note_bridge.jpg" alt="하늘을 향해 이어지는 붉은 아치의 보행교" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span><span class="memo">하늘을 향해 이어지는 붉은 아치의 보행교.</span></figcaption></figure>
+    <figure class="note"><img src="img/note_truck.jpg" alt="햇빛이 드는 거리의 크림색 카페 트레일러와 지나가는 남자" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_beans.jpg" alt="에티오피아 워시드 원두 봉투와 원두 카드" loading="lazy"><figcaption><span class="cap-top mono"><span>Today’s cup</span><a href="https://www.instagram.com/choikomhit/">@choikomhit</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_stream.jpg" alt="청계천 돌담 아래를 걷는 사람과 초록 수풀" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_wine.jpg" alt="벽에 기대 줄지어 선 내추럴 와인 병들과 손글씨 간판" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_glass.jpg" alt="색 견본이 그려진 시음 잔에 담긴 호박색 음료" loading="lazy"><figcaption><span class="cap-top mono"><span>Tasting</span><a href="https://www.instagram.com/choikomhit/">@choikomhit</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_bridge.jpg" alt="하늘을 향해 이어지는 붉은 아치의 보행교" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_storefront.jpg" alt="열린 카페 매장 앞을 빠르게 지나가 흐릿하게 찍힌 흰 셔츠의 남자" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_overpass.jpg" alt="고가도로 아래로 이어지는 산책로와 잔잔한 하천, 뭉게구름이 핀 푸른 하늘" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_bikes.jpg" alt="저녁 햇빛이 비스듬히 드는 골목을 자전거로 지나는 사람들" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
+    <figure class="note"><img src="img/note_riverpath.jpg" alt="하천 옆 자전거 도로를 따라 달리는 라이더들을 위에서 내려다본 모습" loading="lazy"><figcaption><span class="cap-top mono"><span>35mm film</span><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></span></figcaption></figure>
   </div>
 </section>
 
@@ -736,12 +741,12 @@ body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.0
     <p class="mono" style="margin:0 0 24px">07 — Contact</p>
     <p class="big-c rv">오래 가는 주방을<br>함께 만들겠습니다. <em>— 0.01g</em></p>
     <div class="paths" role="list" aria-label="문의 목적별 연락">
-      <div class="path rv" role="listitem"><p class="mono pn">01 — 채용</p><h3>총괄 · 헤드셰프</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%9A%8C%EC%82%AC/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%ED%8F%AC%EC%A7%80%EC%85%98%3A%0A%C2%B7%20%EB%A7%A4%EC%9E%A5%20%EC%BD%98%EC%85%89%ED%8A%B8%EC%99%80%20%EA%B7%9C%EB%AA%A8%28%EC%A2%8C%EC%84%9D%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%9D%B8%EC%9B%90%29%3A%0A%C2%B7%20%EA%B7%BC%EB%AC%B4%20%ED%98%95%ED%83%9C%3A%0A%C2%B7%20%ED%9D%AC%EB%A7%9D%20%ED%95%A9%EB%A5%98%20%EC%8B%9C%EA%B8%B0%3A%0A"><i aria-hidden="true"></i>채용 문의</a><a class="essay-link gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com&amp;su=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%9A%8C%EC%82%AC/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%ED%8F%AC%EC%A7%80%EC%85%98%3A%0A%C2%B7%20%EB%A7%A4%EC%9E%A5%20%EC%BD%98%EC%85%89%ED%8A%B8%EC%99%80%20%EA%B7%9C%EB%AA%A8%28%EC%A2%8C%EC%84%9D%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%9D%B8%EC%9B%90%29%3A%0A%C2%B7%20%EA%B7%BC%EB%AC%B4%20%ED%98%95%ED%83%9C%3A%0A%C2%B7%20%ED%9D%AC%EB%A7%9D%20%ED%95%A9%EB%A5%98%20%EC%8B%9C%EA%B8%B0%3A%0A" target="_blank" rel="noopener"><i aria-hidden="true"></i>Gmail로 열기</a></div>
-      <div class="path rv" role="listitem"><p class="mono pn">02 — 컨설팅</p><h3>F&B 오픈 · 메뉴 자문</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%EC%BB%A8%EC%84%A4%ED%8C%85%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%EB%B8%8C%EB%9E%9C%EB%93%9C/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%EC%83%81%EA%B6%8C%EA%B3%BC%20%EC%BD%98%EC%85%89%ED%8A%B8%3A%0A%C2%B7%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B2%94%EC%9C%84%28%EB%A9%94%EB%89%B4%20%EA%B0%9C%EB%B0%9C%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%84%A4%EA%B3%84%C2%B7%EB%A0%88%EC%8B%9C%ED%94%BC%20%ED%91%9C%EC%A4%80%ED%99%94%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%A4%ED%94%88%20%EB%98%90%EB%8A%94%20%EC%A7%84%ED%96%89%20%EC%9D%BC%EC%A0%95%3A%0A%C2%B7%20%ED%98%84%EC%9E%AC%20%EB%A9%94%EB%89%B4%EC%99%80%20%EA%B3%A0%EB%AF%BC%3A%0A"><i aria-hidden="true"></i>컨설팅 문의</a><a class="essay-link gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com&amp;su=%5B%EC%BB%A8%EC%84%A4%ED%8C%85%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%EB%B8%8C%EB%9E%9C%EB%93%9C/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%EC%83%81%EA%B6%8C%EA%B3%BC%20%EC%BD%98%EC%85%89%ED%8A%B8%3A%0A%C2%B7%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B2%94%EC%9C%84%28%EB%A9%94%EB%89%B4%20%EA%B0%9C%EB%B0%9C%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%84%A4%EA%B3%84%C2%B7%EB%A0%88%EC%8B%9C%ED%94%BC%20%ED%91%9C%EC%A4%80%ED%99%94%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%A4%ED%94%88%20%EB%98%90%EB%8A%94%20%EC%A7%84%ED%96%89%20%EC%9D%BC%EC%A0%95%3A%0A%C2%B7%20%ED%98%84%EC%9E%AC%20%EB%A9%94%EB%89%B4%EC%99%80%20%EA%B3%A0%EB%AF%BC%3A%0A" target="_blank" rel="noopener"><i aria-hidden="true"></i>Gmail로 열기</a></div>
-      <div class="path rv" role="listitem"><p class="mono pn">03 — 협업 · 행사</p><h3>VIP 다이닝 · 케이터링 · 클래스</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%ED%98%91%EC%97%85%C2%B7%ED%96%89%EC%82%AC%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%96%89%EC%82%AC/%ED%98%91%EC%97%85%20%EB%82%B4%EC%9A%A9%3A%0A%C2%B7%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%9E%A5%EC%86%8C%3A%0A%C2%B7%20%EC%9D%B8%EC%9B%90%3A%0A%C2%B7%20%ED%98%95%EC%8B%9D%28%EC%BD%94%EC%8A%A4%C2%B7%EC%BC%80%EC%9D%B4%ED%84%B0%EB%A7%81%C2%B7%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%88%EC%82%B0%20%EB%B2%94%EC%9C%84%3A%0A"><i aria-hidden="true"></i>협업 · 행사 문의</a><a class="essay-link gmail-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com&amp;su=%5B%ED%98%91%EC%97%85%C2%B7%ED%96%89%EC%82%AC%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%96%89%EC%82%AC/%ED%98%91%EC%97%85%20%EB%82%B4%EC%9A%A9%3A%0A%C2%B7%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%9E%A5%EC%86%8C%3A%0A%C2%B7%20%EC%9D%B8%EC%9B%90%3A%0A%C2%B7%20%ED%98%95%EC%8B%9D%28%EC%BD%94%EC%8A%A4%C2%B7%EC%BC%80%EC%9D%B4%ED%84%B0%EB%A7%81%C2%B7%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%88%EC%82%B0%20%EB%B2%94%EC%9C%84%3A%0A" target="_blank" rel="noopener"><i aria-hidden="true"></i>Gmail로 열기</a></div>
+      <div class="path rv" role="listitem"><p class="mono pn">01 — 채용</p><h3>총괄 · 헤드셰프</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%EC%B1%84%EC%9A%A9%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%9A%8C%EC%82%AC/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%ED%8F%AC%EC%A7%80%EC%85%98%3A%0A%C2%B7%20%EB%A7%A4%EC%9E%A5%20%EC%BD%98%EC%85%89%ED%8A%B8%EC%99%80%20%EA%B7%9C%EB%AA%A8%28%EC%A2%8C%EC%84%9D%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%9D%B8%EC%9B%90%29%3A%0A%C2%B7%20%EA%B7%BC%EB%AC%B4%20%ED%98%95%ED%83%9C%3A%0A%C2%B7%20%ED%9D%AC%EB%A7%9D%20%ED%95%A9%EB%A5%98%20%EC%8B%9C%EA%B8%B0%3A%0A"><i aria-hidden="true"></i>채용 문의</a></div>
+      <div class="path rv" role="listitem"><p class="mono pn">02 — 컨설팅</p><h3>F&B 오픈 · 메뉴 자문</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%EC%BB%A8%EC%84%A4%ED%8C%85%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%EB%B8%8C%EB%9E%9C%EB%93%9C/%EB%A7%A4%EC%9E%A5%3A%0A%C2%B7%20%EC%83%81%EA%B6%8C%EA%B3%BC%20%EC%BD%98%EC%85%89%ED%8A%B8%3A%0A%C2%B7%20%ED%95%84%EC%9A%94%ED%95%9C%20%EB%B2%94%EC%9C%84%28%EB%A9%94%EB%89%B4%20%EA%B0%9C%EB%B0%9C%C2%B7%EC%A3%BC%EB%B0%A9%20%EC%84%A4%EA%B3%84%C2%B7%EB%A0%88%EC%8B%9C%ED%94%BC%20%ED%91%9C%EC%A4%80%ED%99%94%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%A4%ED%94%88%20%EB%98%90%EB%8A%94%20%EC%A7%84%ED%96%89%20%EC%9D%BC%EC%A0%95%3A%0A%C2%B7%20%ED%98%84%EC%9E%AC%20%EB%A9%94%EB%89%B4%EC%99%80%20%EA%B3%A0%EB%AF%BC%3A%0A"><i aria-hidden="true"></i>컨설팅 문의</a></div>
+      <div class="path rv" role="listitem"><p class="mono pn">03 — 협업 · 행사</p><h3>VIP 다이닝 · 케이터링 · 클래스</h3><a class="essay-link" href="mailto:choibyungg0.01g@gmail.com?subject=%5B%ED%98%91%EC%97%85%C2%B7%ED%96%89%EC%82%AC%20%EB%AC%B8%EC%9D%98%5D%20&amp;body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94%2C%20%EC%B5%9C%EB%B3%91%EA%B5%AC%20%EC%85%B0%ED%94%84%EB%8B%98.%0A%0A%C2%B7%20%ED%96%89%EC%82%AC/%ED%98%91%EC%97%85%20%EB%82%B4%EC%9A%A9%3A%0A%C2%B7%20%EB%82%A0%EC%A7%9C%EC%99%80%20%EC%9E%A5%EC%86%8C%3A%0A%C2%B7%20%EC%9D%B8%EC%9B%90%3A%0A%C2%B7%20%ED%98%95%EC%8B%9D%28%EC%BD%94%EC%8A%A4%C2%B7%EC%BC%80%EC%9D%B4%ED%84%B0%EB%A7%81%C2%B7%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%93%B1%29%3A%0A%C2%B7%20%EC%98%88%EC%82%B0%20%EB%B2%94%EC%9C%84%3A%0A"><i aria-hidden="true"></i>협업 · 행사 문의</a></div>
     </div>
     <div class="clist">
-      <div><p class="mono" style="margin:0">Email</p><a href="mailto:choibyungg0.01g@gmail.com">choibyungg0.01g@gmail.com</a><a class="gmail-mini" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=choibyungg0.01g@gmail.com" target="_blank" rel="noopener">Gmail로 쓰기 ↗</a></div>
+      <div><p class="mono" style="margin:0">Email</p><a href="mailto:choibyungg0.01g@gmail.com">choibyungg0.01g@gmail.com</a></div>
       <div><p class="mono" style="margin:0">Instagram</p><a href="https://www.instagram.com/0.01g_/">@0.01g_</a></div>
       <div><p class="mono" style="margin:0">Phone</p><a href="tel:+821085779333">+82 10 8577 9333</a></div>
     </div>
@@ -1054,14 +1059,14 @@ body.reading .bar .mid-read{display:inline;text-transform:none;letter-spacing:.0
   function onRead(){
     var p=reduce?1:prog(big,0.85,0.5), n=Math.round(p*words.length);
     for(var i=0;i<words.length;i++) words[i].classList.toggle('on',i<n);
-    var k=reduce?1:prog(kern,0.98,0.55), ls=(1-k)*0.14-0.02; kern.style.letterSpacing=ls.toFixed(3)+'em'; if(trk) trk.textContent=(ls<0?'−':'+')+Math.abs(ls).toFixed(3);
+    var k=reduce?1:prog(kern,0.98,0.55), ls=(1-k)*0.14-0.05; kern.style.letterSpacing=ls.toFixed(3)+'em'; if(trk) trk.textContent=(ls<0?'−':'+')+Math.abs(ls).toFixed(3);
   }
   addEventListener('scroll',onRead,{passive:true}); addEventListener('resize',onRead); onRead();
 
   // Reveal + count-up
   if('IntersectionObserver' in window && !reduce){
     root.classList.add('js');
-    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; e.target.classList.add('in'); var c=e.target.querySelector('.cu'); if(c){ var to=+c.dataset.to,t0=performance.now(); (function u(t){ var p=Math.min(1,(t-t0)/1100); c.textContent=Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(u); })(t0);} io.unobserve(e.target); }); },{rootMargin:'0px 0px -8% 0px'});
+    var io=new IntersectionObserver(function(es){ var seq=0; es.forEach(function(e){ if(!e.isIntersecting) return; if(e.target.classList.contains('fig')){ e.target.style.setProperty('--d',(seq*0.3).toFixed(2)+'s'); seq++; } e.target.classList.add('in'); var c=e.target.querySelector('.cu'); if(c){ var to=+c.dataset.to,t0=performance.now(); (function u(t){ var p=Math.min(1,(t-t0)/1100); c.textContent=Math.round(to*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(u); })(t0);} io.unobserve(e.target); }); },{rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
   }
 
